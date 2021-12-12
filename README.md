@@ -3,20 +3,20 @@
 # Project Name : 
  FoodRecipes  
 
-### Project Description :
+# Project Description :
 Cooking recipes sharing app, where people can browse, search, create and share recipes.
 
 
-###project Features List :
+# project Features List :
 
 - browse, search recipes.
 - create and share the recipes.
 
 
-### Define the scenes :
+# Define the scenes :
 - 
 
-### User Stories :
+# User Stories :
 
 - New user , to start using app must sign-Up to create and share the recipes.
 - User can login to the app , to create and share the recipes.
