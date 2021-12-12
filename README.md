@@ -1,1 +1,1 @@
-# -FoodRecipesApp-_Capstone
+# FoodRecipesApp-Capstone
