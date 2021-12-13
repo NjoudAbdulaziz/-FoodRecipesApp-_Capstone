@@ -9,9 +9,19 @@ import UIKit
 
 class CategoryCollectionViewCell: UICollectionViewCell {
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    static let identifier = String(describing: CategoryCollectionViewCell.self)
+    
+    @IBOutlet weak var categoryImageView: UIImageView!
+    @IBOutlet weak var categpryTitleLbl: UILabel!
+    
+    func setup(category: DishCategory){
+        categpryTitleLbl.text = category.name
+        categoryImageView.image = category.image
     }
-
 }
+
+//extension String{
+//    var asUrl: URL? {
+//        return URL(string: self)
+//    }
+//}
