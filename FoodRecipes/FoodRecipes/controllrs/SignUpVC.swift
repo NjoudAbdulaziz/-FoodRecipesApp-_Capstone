@@ -29,7 +29,6 @@ class SignUpVC: UIViewController {
     
     @IBAction func register(_ sender: Any) {
         signUp()
-        performSegue(withIdentifier: "main", sender: nil)
 
 }
     
@@ -49,9 +48,10 @@ class SignUpVC: UIViewController {
                     
                     if check {
                         print("Done Saving in Database")
+                        self.performSegue(withIdentifier: "main", sender: nil)
+
                     }
                     else{
-                        
                     }
                 })
 
