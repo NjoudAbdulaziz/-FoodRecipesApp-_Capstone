@@ -14,6 +14,7 @@ class SignInVC: UIViewController {
 
     @IBOutlet weak var email: UITextField!
     @IBOutlet weak var password: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -24,14 +25,16 @@ class SignInVC: UIViewController {
             Auth.auth().signIn(withEmail: email, password: password) { [weak self]
                 AuthResult , error in
                 guard let strongSelf = self else {return}
-                if let e = error{
-                    print(e)
+                if let eerror = error {
+                    let alert = UIAlertController(title: "login failed", message: "couldn't find your Account!", preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                    self?.present(alert, animated: true)
                 }else{
-                    self?.performSegue(withIdentifier: "mainn", sender: nil)
+                    self?.performSegue(withIdentifier: "toMain", sender: nil)
                 }
                 
-    }
-    }
+            }
+        }
     }
     @IBAction func createNewAcountBtn(_ sender: Any) {
         performSegue(withIdentifier: "signUpPage", sender: nil)

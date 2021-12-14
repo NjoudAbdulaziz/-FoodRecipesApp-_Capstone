@@ -12,7 +12,7 @@ class User {
     
     var userName:String?
     var email: String?
-
+    
 }
 extension User {
     

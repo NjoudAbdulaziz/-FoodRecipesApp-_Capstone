@@ -10,6 +10,7 @@ import UIKit
 class LogOutVC: UIViewController {
 
     override func viewDidLoad() {
+
         super.viewDidLoad()
 
     }
