@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-struct DishCategory {
+struct FoodCategory {
     let id , name : String
     let image : UIImage
 }

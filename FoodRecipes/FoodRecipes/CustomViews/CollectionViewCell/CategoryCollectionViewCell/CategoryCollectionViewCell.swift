@@ -14,14 +14,10 @@ class CategoryCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var categoryImageView: UIImageView!
     @IBOutlet weak var categpryTitleLbl: UILabel!
     
-    func setup(category: DishCategory){
+    func setup(category: FoodCategory){
         categpryTitleLbl.text = category.name
         categoryImageView.image = category.image
     }
 }
 
-//extension String{
-//    var asUrl: URL? {
-//        return URL(string: self)
-//    }
-//}
+

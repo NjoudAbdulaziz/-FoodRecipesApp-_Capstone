@@ -13,7 +13,8 @@ class HomeVC: UIViewController {
     @IBOutlet weak var categoryCollectionView: UICollectionView!
     
     @IBOutlet weak var trendingRecipesCollectionView: UICollectionView!
-    var categories:[DishCategory] = [
+    
+    var categories:[FoodCategory] = [
         .init(id: "id1", name: "salad dish1", image: UIImage(named: "LaunchScreen")!),
         .init(id: "id1", name: "salad dish2", image: UIImage(named: "LaunchScreen")!),
         .init(id: "id1", name: "salad dish3", image: UIImage(named: "LaunchScreen")!),

@@ -13,7 +13,7 @@
 		B76E6D96276609B10076D074 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76E6D95276609B10076D074 /* HomeVC.swift */; };
 		B76E6D9C27661DA20076D074 /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76E6D9A27661DA20076D074 /* CategoryCollectionViewCell.swift */; };
 		B76E6D9D27661DA20076D074 /* CategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B76E6D9B27661DA20076D074 /* CategoryCollectionViewCell.xib */; };
-		B76E6D9F27667A1E0076D074 /* DishCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76E6D9E27667A1E0076D074 /* DishCategory.swift */; };
+		B76E6D9F27667A1E0076D074 /* FoodCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76E6D9E27667A1E0076D074 /* FoodCategory.swift */; };
 		B76E6DA22766878F0076D074 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76E6DA12766878F0076D074 /* CardView.swift */; };
 		B76E6DA82766979E0076D074 /* TrendingResipesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76E6DA62766979E0076D074 /* TrendingResipesCollectionViewCell.swift */; };
 		B76E6DA92766979E0076D074 /* TrendingResipesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B76E6DA72766979E0076D074 /* TrendingResipesCollectionViewCell.xib */; };
@@ -25,7 +25,6 @@
 		B76E6DB52768AAC80076D074 /* RecipesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76E6DB42768AAC80076D074 /* RecipesVC.swift */; };
 		B78C16DE2761D500009F4973 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78C16DD2761D500009F4973 /* AppDelegate.swift */; };
 		B78C16E02761D500009F4973 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78C16DF2761D500009F4973 /* SceneDelegate.swift */; };
-		B78C16E22761D500009F4973 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78C16E12761D500009F4973 /* ViewController.swift */; };
 		B78C16E52761D500009F4973 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B78C16E32761D500009F4973 /* Main.storyboard */; };
 		B78C16E72761D503009F4973 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B78C16E62761D503009F4973 /* Assets.xcassets */; };
 		B78C16EA2761D503009F4973 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B78C16E82761D503009F4973 /* LaunchScreen.storyboard */; };
@@ -47,7 +46,7 @@
 		B76E6D95276609B10076D074 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		B76E6D9A27661DA20076D074 /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		B76E6D9B27661DA20076D074 /* CategoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCollectionViewCell.xib; sourceTree = "<group>"; };
-		B76E6D9E27667A1E0076D074 /* DishCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishCategory.swift; sourceTree = "<group>"; };
+		B76E6D9E27667A1E0076D074 /* FoodCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCategory.swift; sourceTree = "<group>"; };
 		B76E6DA12766878F0076D074 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		B76E6DA62766979E0076D074 /* TrendingResipesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingResipesCollectionViewCell.swift; sourceTree = "<group>"; };
 		B76E6DA72766979E0076D074 /* TrendingResipesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrendingResipesCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -60,7 +59,6 @@
 		B78C16DA2761D500009F4973 /* FoodRecipes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodRecipes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B78C16DD2761D500009F4973 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B78C16DF2761D500009F4973 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B78C16E12761D500009F4973 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B78C16E42761D500009F4973 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B78C16E62761D503009F4973 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B78C16E92761D503009F4973 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -178,7 +176,6 @@
 				B78C16FE2762129F009F4973 /* MODELS */,
 				B78C16DD2761D500009F4973 /* AppDelegate.swift */,
 				B78C16DF2761D500009F4973 /* SceneDelegate.swift */,
-				B78C16E12761D500009F4973 /* ViewController.swift */,
 				B78C16E62761D503009F4973 /* Assets.xcassets */,
 				B78C16E82761D503009F4973 /* LaunchScreen.storyboard */,
 				B78C16E32761D500009F4973 /* Main.storyboard */,
@@ -193,7 +190,7 @@
 			children = (
 				B78C16FC27621299009F4973 /* User.swift */,
 				B78C16FF2762174B009F4973 /* UserApi.swift */,
-				B76E6D9E27667A1E0076D074 /* DishCategory.swift */,
+				B76E6D9E27667A1E0076D074 /* FoodCategory.swift */,
 				B76E6DAA27669C300076D074 /* Dish.swift */,
 				B76E6DAC2767392B0076D074 /* Recipe.swift */,
 				B76E6DAE27676B630076D074 /* RecipeApi.swift */,
@@ -294,7 +291,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B73E8B142765EDEB00AACC31 /* LogOutVC.swift in Sources */,
-				B76E6D9F27667A1E0076D074 /* DishCategory.swift in Sources */,
+				B76E6D9F27667A1E0076D074 /* FoodCategory.swift in Sources */,
 				B78C170F27653CFF009F4973 /* OnboardingVC.swift in Sources */,
 				B78C16FD2762129A009F4973 /* User.swift in Sources */,
 				B76E6D96276609B10076D074 /* HomeVC.swift in Sources */,
@@ -304,7 +301,6 @@
 				B76E6DAD2767392B0076D074 /* Recipe.swift in Sources */,
 				B78C17002762174B009F4973 /* UserApi.swift in Sources */,
 				B76E6DB12767B81F0076D074 /* SettingsVC.swift in Sources */,
-				B78C16E22761D500009F4973 /* ViewController.swift in Sources */,
 				B78C16DE2761D500009F4973 /* AppDelegate.swift in Sources */,
 				B76E6DA82766979E0076D074 /* TrendingResipesCollectionViewCell.swift in Sources */,
 				B78C170D2762383B009F4973 /* SignUpVC.swift in Sources */,
