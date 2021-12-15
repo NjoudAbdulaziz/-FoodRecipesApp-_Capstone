@@ -9,13 +9,12 @@ import UIKit
 
 class RecipesVC: UIViewController {
 
-    @IBOutlet weak var imageView: UIImageView!
-    @IBOutlet weak var titel: UITextField!
-    @IBOutlet weak var timeToCook: UITextField!
-    @IBOutlet weak var serves: UITextField!
-    @IBOutlet weak var ingredients: UITextField!
-    @IBOutlet weak var steps: UITextField!
-    
+    @IBOutlet weak var image: UIImageView!
+    @IBOutlet weak var titel: UILabel!
+    @IBOutlet weak var Ingredients: UILabel!
+    @IBOutlet weak var detilesIngredients: UILabel!
+    @IBOutlet weak var method: UILabel!
+    @IBOutlet weak var detilsMethod: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
 

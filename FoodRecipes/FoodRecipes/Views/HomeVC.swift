@@ -27,7 +27,7 @@ class HomeVC: UIViewController {
     var trending: [Dish] = [
         .init(id: "id1", name: "Garri", image: UIImage(named: "LaunchScreen")),
         .init(id: "id1", name: "Indomie", image: UIImage(named: "LaunchScreen")),
-        .init(id: "id1", name: "Garri2", image: UIImage(named: "LaunchScreen")),
+        .init(id: "id1", name: "Pizza", image: UIImage(named: "LaunchScreen")),
         .init(id: "id1", name: "Pizza", image: UIImage(named: "LaunchScreen")),
 
     

@@ -4,17 +4,17 @@
 //
 //  Created by Njoud Alrshidi on 09/05/1443 AH.
 //
-
-import Foundation
-import FirebaseFirestore
-
-class RecipeApi {
-    
-    static func addRecipe(){
-        
-        
-    }
-}
+//
+//import Foundation
+//import FirebaseFirestore
+//
+//class RecipeApi {
+//
+//    static func addRecipe(){
+//
+//
+//    }
+//}
 
 
 //var imageOfRecipe : UIImage?
