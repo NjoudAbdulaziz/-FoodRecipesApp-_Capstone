@@ -11,17 +11,17 @@ import FirebaseAuth
 import FirebaseFirestore
 
 class SignUpVC: UIViewController {
-
+    
     @IBOutlet weak var userNameTF: UITextField!
     @IBOutlet weak var newEmailTF: UITextField!
     @IBOutlet weak var newPasswordTF: UITextField!
-
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        UserApi.getUser(uid: Auth.auth().currentUser?.uid ?? "") { user in
-//            self.newEmailTF.text = user.email
-//        }
+        //        UserApi.getUser(uid: Auth.auth().currentUser?.uid ?? "") { user in
+        //            self.newEmailTF.text = user.email
+        //        }
         
         
         
@@ -29,8 +29,8 @@ class SignUpVC: UIViewController {
     
     @IBAction func register(_ sender: Any) {
         signUp()
-
-}
+        
+    }
     
     func signUp(){
         
@@ -40,7 +40,7 @@ class SignUpVC: UIViewController {
                 guard let user = AuthResul?.user, error == nil else {
                     print("email\(String(describing:AuthResul?.user.email ))")
                     print("uid\(String(describing:AuthResul?.user.uid ))")
-
+                    
                     return
                 }
                 
@@ -48,14 +48,21 @@ class SignUpVC: UIViewController {
                     
                     if check {
                         print("Done Saving in Database")
-                        self.performSegue(withIdentifier: "main", sender: nil)
-
+                        
+                        self.goTotabBarPage()
                     }
                     else{
                     }
                 })
-
+                
             }
+        }
     }
+    
+    private func goTotabBarPage(){
+        let mainView = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "toTabBar") as! UITabBarController
+        mainView.modalPresentationStyle = .fullScreen
+        self.present(mainView, animated: true, completion: nil)
     }
+    
 }

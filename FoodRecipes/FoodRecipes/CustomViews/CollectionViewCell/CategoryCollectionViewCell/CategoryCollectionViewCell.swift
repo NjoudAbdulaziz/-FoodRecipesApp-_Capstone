@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class CategoryCollectionViewCell: UICollectionViewCell {
 
@@ -16,7 +17,8 @@ class CategoryCollectionViewCell: UICollectionViewCell {
     
     func setup(category: FoodCategory){
         categpryTitleLbl.text = category.name
-        categoryImageView.image = category.image
+        categoryImageView.kf.setImage(with: category.image.url)
+        
     }
 }
 

@@ -29,8 +29,10 @@ class SignInVC: UIViewController {
                     let alert = UIAlertController(title: "login failed", message: "couldn't find your Account!", preferredStyle: .alert)
                     alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
                     self?.present(alert, animated: true)
+                    
+                   
                 }else{
-                    self?.performSegue(withIdentifier: "toMain", sender: nil)
+                    self?.goTotabBarPage()
                 }
                 
             }
@@ -40,5 +42,10 @@ class SignInVC: UIViewController {
         performSegue(withIdentifier: "signUpPage", sender: nil)
     }
     
-
+    private func goTotabBarPage(){
+      let mainView = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "toTabBar") as! UITabBarController
+      mainView.modalPresentationStyle = .fullScreen
+      self.present(mainView, animated: true, completion: nil)
+    }
+    
 }

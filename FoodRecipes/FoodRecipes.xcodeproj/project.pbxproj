@@ -23,6 +23,8 @@
 		B76E6DB12767B81F0076D074 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76E6DB02767B81F0076D074 /* SettingsVC.swift */; };
 		B76E6DB32768A4350076D074 /* RecipeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76E6DB22768A4350076D074 /* RecipeVC.swift */; };
 		B76E6DB52768AAC80076D074 /* RecipesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76E6DB42768AAC80076D074 /* RecipesVC.swift */; };
+		B76E6DBB276A154B0076D074 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = B76E6DBA276A154B0076D074 /* Kingfisher */; };
+		B76E6DBD276A17910076D074 /* Extension+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76E6DBC276A17910076D074 /* Extension+String.swift */; };
 		B78C16DE2761D500009F4973 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78C16DD2761D500009F4973 /* AppDelegate.swift */; };
 		B78C16E02761D500009F4973 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78C16DF2761D500009F4973 /* SceneDelegate.swift */; };
 		B78C16E52761D500009F4973 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B78C16E32761D500009F4973 /* Main.storyboard */; };
@@ -56,6 +58,7 @@
 		B76E6DB02767B81F0076D074 /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
 		B76E6DB22768A4350076D074 /* RecipeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeVC.swift; sourceTree = "<group>"; };
 		B76E6DB42768AAC80076D074 /* RecipesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesVC.swift; sourceTree = "<group>"; };
+		B76E6DBC276A17910076D074 /* Extension+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+String.swift"; sourceTree = "<group>"; };
 		B78C16DA2761D500009F4973 /* FoodRecipes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodRecipes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B78C16DD2761D500009F4973 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B78C16DF2761D500009F4973 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B76E6DBB276A154B0076D074 /* Kingfisher in Frameworks */,
 				B78C16F52761D6F8009F4973 /* FirebaseAnalytics in Frameworks */,
 				B78C16F72761D6F8009F4973 /* FirebaseAuth in Frameworks */,
 				B78C16F92761D6F8009F4973 /* FirebaseFirestore in Frameworks */,
@@ -150,6 +154,14 @@
 			path = TrendingRecipesCollectionViewCell;
 			sourceTree = "<group>";
 		};
+		B76E6DB8276A10E00076D074 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B76E6DBC276A17910076D074 /* Extension+String.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		B78C16D12761D500009F4973 = {
 			isa = PBXGroup;
 			children = (
@@ -170,12 +182,13 @@
 		B78C16DC2761D500009F4973 /* FoodRecipes */ = {
 			isa = PBXGroup;
 			children = (
+				B76E6DB8276A10E00076D074 /* Extensions */,
 				B76E6D9727661C890076D074 /* CustomViews */,
 				B76E6D94276609880076D074 /* Views */,
 				B78C1707276234E2009F4973 /* controllrs */,
 				B78C16FE2762129F009F4973 /* MODELS */,
-				B78C16DD2761D500009F4973 /* AppDelegate.swift */,
 				B78C16DF2761D500009F4973 /* SceneDelegate.swift */,
+				B78C16DD2761D500009F4973 /* AppDelegate.swift */,
 				B78C16E62761D503009F4973 /* Assets.xcassets */,
 				B78C16E82761D503009F4973 /* LaunchScreen.storyboard */,
 				B78C16E32761D500009F4973 /* Main.storyboard */,
@@ -228,6 +241,7 @@
 				B78C16F42761D6F8009F4973 /* FirebaseAnalytics */,
 				B78C16F62761D6F8009F4973 /* FirebaseAuth */,
 				B78C16F82761D6F8009F4973 /* FirebaseFirestore */,
+				B76E6DBA276A154B0076D074 /* Kingfisher */,
 			);
 			productName = FoodRecipes;
 			productReference = B78C16DA2761D500009F4973 /* FoodRecipes.app */;
@@ -259,6 +273,7 @@
 			mainGroup = B78C16D12761D500009F4973;
 			packageReferences = (
 				B78C16F32761D6F8009F4973 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				B76E6DB9276A154B0076D074 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = B78C16DB2761D500009F4973 /* Products */;
 			projectDirPath = "";
@@ -308,6 +323,7 @@
 				B76E6DB52768AAC80076D074 /* RecipesVC.swift in Sources */,
 				B76E6D9C27661DA20076D074 /* CategoryCollectionViewCell.swift in Sources */,
 				B76E6DAB27669C300076D074 /* Dish.swift in Sources */,
+				B76E6DBD276A17910076D074 /* Extension+String.swift in Sources */,
 				B76E6DA22766878F0076D074 /* CardView.swift in Sources */,
 				B78C16E02761D500009F4973 /* SceneDelegate.swift in Sources */,
 				B76E6DAF27676B630076D074 /* RecipeApi.swift in Sources */,
@@ -530,6 +546,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		B76E6DB9276A154B0076D074 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
 		B78C16F32761D6F8009F4973 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
@@ -541,6 +565,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		B76E6DBA276A154B0076D074 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B76E6DB9276A154B0076D074 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
 		B78C16F42761D6F8009F4973 /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = B78C16F32761D6F8009F4973 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;

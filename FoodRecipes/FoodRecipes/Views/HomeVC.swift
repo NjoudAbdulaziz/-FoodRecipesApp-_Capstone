@@ -15,20 +15,19 @@ class HomeVC: UIViewController {
     @IBOutlet weak var trendingRecipesCollectionView: UICollectionView!
     
     var categories:[FoodCategory] = [
-        .init(id: "id1", name: "salad dish1", image: UIImage(named: "LaunchScreen")!),
-        .init(id: "id1", name: "salad dish2", image: UIImage(named: "LaunchScreen")!),
-        .init(id: "id1", name: "salad dish3", image: UIImage(named: "LaunchScreen")!),
-        .init(id: "id1", name: "salad dish4", image: UIImage(named: "LaunchScreen")!),
-        .init(id: "id1", name: "salad dish5", image: UIImage(named: "LaunchScreen")!),
+//        .init(id: "id1", name: "salad dish1", image: UIImage(named: "LaunchScreen")!),
+//        .init(id: "id1", name: "salad dish2", image: UIImage(named: "LaunchScreen")!),
+//        .init(id: "id1", name: "salad dish3", image: UIImage(named: "LaunchScreen")!),
+//        .init(id: "id1", name: "salad dish4", image: UIImage(named: "LaunchScreen")!),
+//        .init(id: "id1", name: "salad dish5", image: UIImage(named: "LaunchScreen")!),
 
-            
     ]
     
-    var trending: [Dish] = [
-        .init(id: "id1", name: "Garri", image: UIImage(named: "LaunchScreen")),
-        .init(id: "id1", name: "Indomie", image: UIImage(named: "LaunchScreen")),
-        .init(id: "id1", name: "Pizza", image: UIImage(named: "LaunchScreen")),
-        .init(id: "id1", name: "Pizza", image: UIImage(named: "LaunchScreen")),
+  var trending: [Dish] = [
+//        .init(id: "id1", name: "Garri", image: UIImage(named: "LaunchScreen")),
+//        .init(id: "id1", name: "Indomie", image: UIImage(named: "LaunchScreen")),
+//        .init(id: "id1", name: "Pizza", image: UIImage(named: "LaunchScreen")),
+//        .init(id: "id1", name: "Pizza", image: UIImage(named: "LaunchScreen")),
 
     
     ]

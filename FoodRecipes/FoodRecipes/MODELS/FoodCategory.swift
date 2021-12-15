@@ -9,6 +9,6 @@ import Foundation
 import UIKit
 
 struct FoodCategory {
-    let id , name : String
-    let image : UIImage
+    let id , name, image : String
+    
 }
