@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B73E8B122765EA8B00AACC31 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73E8B112765EA8B00AACC31 /* SignInVC.swift */; };
-		B73E8B142765EDEB00AACC31 /* LogOutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73E8B132765EDEB00AACC31 /* LogOutVC.swift */; };
+		B73E8B142765EDEB00AACC31 /* SignIn_SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73E8B132765EDEB00AACC31 /* SignIn_SignUpVC.swift */; };
 		B76E6D93276605680076D074 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B76E6D92276605680076D074 /* GoogleService-Info.plist */; };
 		B76E6D96276609B10076D074 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76E6D95276609B10076D074 /* HomeVC.swift */; };
 		B76E6D9C27661DA20076D074 /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76E6D9A27661DA20076D074 /* CategoryCollectionViewCell.swift */; };
@@ -43,7 +43,7 @@
 
 /* Begin PBXFileReference section */
 		B73E8B112765EA8B00AACC31 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
-		B73E8B132765EDEB00AACC31 /* LogOutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogOutVC.swift; sourceTree = "<group>"; };
+		B73E8B132765EDEB00AACC31 /* SignIn_SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignIn_SignUpVC.swift; sourceTree = "<group>"; };
 		B76E6D92276605680076D074 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B76E6D95276609B10076D074 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		B76E6D9A27661DA20076D074 /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -214,9 +214,9 @@
 		B78C1707276234E2009F4973 /* controllrs */ = {
 			isa = PBXGroup;
 			children = (
+				B73E8B132765EDEB00AACC31 /* SignIn_SignUpVC.swift */,
 				B73E8B112765EA8B00AACC31 /* SignInVC.swift */,
 				B78C170C2762383B009F4973 /* SignUpVC.swift */,
-				B73E8B132765EDEB00AACC31 /* LogOutVC.swift */,
 			);
 			path = controllrs;
 			sourceTree = "<group>";
@@ -305,7 +305,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B73E8B142765EDEB00AACC31 /* LogOutVC.swift in Sources */,
+				B73E8B142765EDEB00AACC31 /* SignIn_SignUpVC.swift in Sources */,
 				B76E6D9F27667A1E0076D074 /* FoodCategory.swift in Sources */,
 				B78C170F27653CFF009F4973 /* OnboardingVC.swift in Sources */,
 				B78C16FD2762129A009F4973 /* User.swift in Sources */,
@@ -475,6 +475,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FoodRecipes/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -502,6 +503,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FoodRecipes/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

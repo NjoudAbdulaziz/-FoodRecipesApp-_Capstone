@@ -11,7 +11,7 @@ import FirebaseAuth
 import FirebaseFirestore
 
 class SignInVC: UIViewController {
-
+    //UIView Properties.....
     @IBOutlet weak var email: UITextField!
     @IBOutlet weak var password: UITextField!
     
@@ -38,9 +38,7 @@ class SignInVC: UIViewController {
             }
         }
     }
-    @IBAction func createNewAcountBtn(_ sender: Any) {
-        performSegue(withIdentifier: "signUpPage", sender: nil)
-    }
+
     
     private func goTotabBarPage(){
       let mainView = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "toTabBar") as! UITabBarController

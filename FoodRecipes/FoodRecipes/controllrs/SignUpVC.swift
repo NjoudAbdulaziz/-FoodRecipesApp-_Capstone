@@ -12,6 +12,7 @@ import FirebaseFirestore
 
 class SignUpVC: UIViewController {
     
+    //UIView Properties...
     @IBOutlet weak var userNameTF: UITextField!
     @IBOutlet weak var newEmailTF: UITextField!
     @IBOutlet weak var newPasswordTF: UITextField!

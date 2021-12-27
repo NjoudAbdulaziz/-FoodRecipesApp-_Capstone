@@ -10,7 +10,7 @@ import FirebaseAuth
 import Firebase
 class SettingsVC: UIViewController {
 
-    @IBOutlet weak var tabelView: UITableView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,7 +21,11 @@ class SettingsVC: UIViewController {
     @IBAction func signOutBtn(_ sender: UIButton) {
         do {
             try Auth.auth().signOut()
-            performSegue(withIdentifier: "logOut", sender: nil)
+                  let mainView = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "firstPage") as! SignIn_SignUpVC
+                  mainView.modalPresentationStyle = .fullScreen
+                  self.present(mainView, animated: true, completion: nil)
+                
+
         }
         catch let signOutError as NSError {
             print("Eroor logOut : %@" , signOutError)
