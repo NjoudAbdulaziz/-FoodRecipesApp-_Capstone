@@ -7,17 +7,11 @@
 
 import UIKit
 
-class RecipeVC: UIViewController {
+class SearchVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
     }
     
-    @IBAction func addRecipe(_ sender: UIButton) {
-        self.performSegue(withIdentifier: "toAddRecipe", sender: nil)
-
-    }
-    
-
 }
