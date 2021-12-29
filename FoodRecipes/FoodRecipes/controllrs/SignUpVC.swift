@@ -61,7 +61,7 @@ class SignUpVC: UIViewController {
     }
     
     private func goTotabBarPage(){
-        let mainView = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "Home") as! HomeVC
+        let mainView = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "main") as! HomeVC
         mainView.modalPresentationStyle = .fullScreen
         self.present(mainView, animated: true, completion: nil)
     }

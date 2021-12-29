@@ -19,13 +19,13 @@ class SideMenuTableViewCell: UITableViewCell {
         super.awakeFromNib()
         
          //background
-        self.backgroundColor = .clear
+        
         
         //Icon
-        self.iconImageView.tintColor = .white
+    
         
         //Title
-        self.titleLabel.textColor = .white
+        
         
     }
     

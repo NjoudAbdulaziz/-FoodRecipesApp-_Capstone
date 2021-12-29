@@ -10,7 +10,7 @@ import UIKit
 
 struct SideMenu{
     
-    var icon: UIImage
-    var title: String
+    let icon: UIImage
+    let title: String
     
 }

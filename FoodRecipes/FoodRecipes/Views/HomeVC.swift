@@ -10,6 +10,7 @@ import UIKit
 class HomeVC: UIViewController {
 
     
+    @IBOutlet weak var sideMenuBtn: UIBarButtonItem!
     @IBOutlet weak var categoryCollectionView: UICollectionView!
     
     @IBOutlet weak var trendingRecipesCollectionView: UICollectionView!
@@ -36,6 +37,11 @@ class HomeVC: UIViewController {
         super.viewDidLoad()
         
         registerCells()
+        
+        //Menu Button Tint Color
+        //navigationController?.navigationBar.tintColor = .white
+        sideMenuBtn.target = revealViewController()
+        sideMenuBtn.action = #selector(revealViewController()?.revealSideMenu)
 
     }
     

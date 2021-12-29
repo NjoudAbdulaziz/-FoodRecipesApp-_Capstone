@@ -454,6 +454,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="categoryCollectionView" destination="IWc-1c-bUo" id="ucP-5v-E4s"/>
+                        <outlet property="sideMenuBtn" destination="GfF-Rv-TzU" id="VwB-kH-I0a"/>
                         <outlet property="trendingRecipesCollectionView" destination="RUf-nD-Adc" id="zB1-yn-Kuz"/>
                     </connections>
                 </viewController>
@@ -464,7 +465,7 @@
         <!--MainVC-->
         <scene sceneID="sNy-Y5-PcJ">
             <objects>
-                <viewController id="H3Z-Sd-N32" customClass="MainVC" customModule="FoodRecipes" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="main" id="H3Z-Sd-N32" customClass="MainVC" customModule="FoodRecipes" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lDe-c7-mpY">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -494,6 +495,9 @@
                         <barButtonItem key="leftBarButtonItem" image="line.horizontal.3" catalog="system" id="SS7-Mv-X0Y"/>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="sideMenuBtn" destination="SS7-Mv-X0Y" id="iqS-ef-2VA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hdk-kf-boz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -515,6 +519,9 @@
                             <barButtonItem image="line.horizontal.3" catalog="system" id="9e9-ym-sbj"/>
                         </leftBarButtonItems>
                     </navigationItem>
+                    <connections>
+                        <outlet property="sideMenuBtn" destination="9e9-ym-sbj" id="GKW-ka-qRC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D4W-Bs-AIg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -533,6 +540,9 @@
                     <navigationItem key="navigationItem" title="Settings" id="lea-Wd-1Hb">
                         <barButtonItem key="leftBarButtonItem" image="line.horizontal.3" catalog="system" id="ZJE-FX-96D"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="sideMenuBtn" destination="ZJE-FX-96D" id="D5v-5d-GTM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZzD-Ys-AiN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -551,6 +561,9 @@
                     <navigationItem key="navigationItem" title="Profile" id="7FJ-hK-y2Z">
                         <barButtonItem key="leftBarButtonItem" image="line.horizontal.3" catalog="system" id="Z6A-Zb-y6X"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="sideMenuBtn" destination="Z6A-Zb-y6X" id="MNB-Af-avx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NaB-Q5-i5T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -842,7 +855,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="9aj-Se-xEp"/>
-        <segue reference="U26-Wj-m4u"/>
+        <segue reference="rEM-3t-Y7h"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="launchScreen-1" width="1024" height="1024"/>
