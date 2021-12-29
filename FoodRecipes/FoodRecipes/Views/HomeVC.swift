@@ -11,25 +11,33 @@ class HomeVC: UIViewController {
 
     
     @IBOutlet weak var sideMenuBtn: UIBarButtonItem!
+    
     @IBOutlet weak var categoryCollectionView: UICollectionView!
     
     @IBOutlet weak var trendingRecipesCollectionView: UICollectionView!
-    
+    //...
     var categories:[FoodCategory] = [
-//        .init(id: "id1", name: "salad dish1", image: UIImage(named: "LaunchScreen")!),
-//        .init(id: "id1", name: "salad dish2", image: UIImage(named: "LaunchScreen")!),
-//        .init(id: "id1", name: "salad dish3", image: UIImage(named: "LaunchScreen")!),
-//        .init(id: "id1", name: "salad dish4", image: UIImage(named: "LaunchScreen")!),
-//        .init(id: "id1", name: "salad dish5", image: UIImage(named: "LaunchScreen")!),
+        .init(id: "id1", name: "Asian food0", image: "https://picsum.photos/100/200"),
+        .init(id: "id1", name: "Asian food1", image: "https://picsum.photos/100/200"),
+        .init(id: "id1", name: "Asian food2", image: "https://picsum.photos/100/200"),
+        .init(id: "id1", name: "Asian food3", image: "https://picsum.photos/100/200"),
+        .init(id: "id1", name: "Asian food4", image: "https://picsum.photos/100/200")
 
     ]
     
-  var trending: [Dish] = [
-//        .init(id: "id1", name: "Garri", image: UIImage(named: "LaunchScreen")),
-//        .init(id: "id1", name: "Indomie", image: UIImage(named: "LaunchScreen")),
-//        .init(id: "id1", name: "Pizza", image: UIImage(named: "LaunchScreen")),
-//        .init(id: "id1", name: "Pizza", image: UIImage(named: "LaunchScreen")),
-
+  var trending: [Recipe] = [
+    .init(id: "id1", recipeImage: UIImage(named: "recipeTwo"), categoryOfRecipe: "category", nameOfTheRecipe: "pizza", timerIcon: UIImage(named: "timer"), timeofRecipe: "30 M", hardIcon: UIImage(named: "menu"), hardOfRecipe: "hard", numberOfThePeopleIcon: UIImage(named: "forkAndKnofa"), numberOfPeople: "6 People"),
+    
+    .init(id: "id1", recipeImage: UIImage(named: "recipeTwo"), categoryOfRecipe: "category", nameOfTheRecipe: "pizza", timerIcon: UIImage(named: "timer"), timeofRecipe: "30 M", hardIcon: UIImage(named: "menu"), hardOfRecipe: "hard", numberOfThePeopleIcon: UIImage(named: "forkAndKnofa"), numberOfPeople: "3 People"),
+    
+    .init(id: "id1", recipeImage: UIImage(named: "recipeTwo"), categoryOfRecipe: "category", nameOfTheRecipe: "pizza", timerIcon: UIImage(named: "timer"), timeofRecipe: "30 M", hardIcon: UIImage(named: "menu"), hardOfRecipe: "hard", numberOfThePeopleIcon: UIImage(named: "forkAndKnofa"), numberOfPeople: "0 People"),
+    
+    .init(id: "id1", recipeImage: UIImage(named: "recipeTwo"), categoryOfRecipe: "category", nameOfTheRecipe: "pizza", timerIcon: UIImage(named: "timer"), timeofRecipe: "30 M", hardIcon: UIImage(named: "menu"), hardOfRecipe: "hard", numberOfThePeopleIcon: UIImage(named: "forkAndKnofa"), numberOfPeople: "7 People"),
+    
+    .init(id: "id1", recipeImage: UIImage(named: "recipeTwo"), categoryOfRecipe: "category", nameOfTheRecipe: "pizza", timerIcon: UIImage(named: "timer"), timeofRecipe: "30 M", hardIcon: UIImage(named: "menu"), hardOfRecipe: "hard", numberOfThePeopleIcon: UIImage(named: "forkAndKnofa"), numberOfPeople: "9 People"),
+    
+    .init(id: "id1", recipeImage: UIImage(named: "recipeTwo"), categoryOfRecipe: "category", nameOfTheRecipe: "pizza", timerIcon: UIImage(named: "timer"), timeofRecipe: "30 M", hardIcon: UIImage(named: "menu"), hardOfRecipe: "hard", numberOfThePeopleIcon: UIImage(named: "forkAndKnofa"), numberOfPeople: "7 People")
+    
     
     ]
     
@@ -56,6 +64,7 @@ class HomeVC: UIViewController {
 
 
 extension HomeVC: UICollectionViewDelegate , UICollectionViewDataSource {
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         switch collectionView {
         case categoryCollectionView:
@@ -75,7 +84,7 @@ extension HomeVC: UICollectionViewDelegate , UICollectionViewDataSource {
             return cell
         case trendingRecipesCollectionView:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: TrendingResipesCollectionViewCell.identifier, for: indexPath) as! TrendingResipesCollectionViewCell
-            cell.setup(dish: trending[indexPath.row])
+            cell.setup(recipe:trending[indexPath.row])
             return cell
         default: return UICollectionViewCell()
         }

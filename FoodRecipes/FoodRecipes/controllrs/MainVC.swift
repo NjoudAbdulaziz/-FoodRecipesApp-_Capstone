@@ -37,7 +37,6 @@ class MainVC: UIViewController {
         self.sideMenuShadowView.backgroundColor = .black
         self.sideMenuShadowView.alpha = 0.0
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(TabGestureRecognizer))
-       // tapGestureRecognizer.numberOfTapsRequired = 1
         tapGestureRecognizer.numberOfTapsRequired = 1
         tapGestureRecognizer.delegate = self
         view.addGestureRecognizer(tapGestureRecognizer)
