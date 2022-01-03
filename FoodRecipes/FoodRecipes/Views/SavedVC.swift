@@ -9,6 +9,7 @@ import UIKit
 
 class SavedVC: UIViewController {
 
+    @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var sideMenuBtn: UIBarButtonItem!
     
     override func viewDidLoad() {
@@ -16,16 +17,29 @@ class SavedVC: UIViewController {
         sideMenuBtn.target = revealViewController()
         sideMenuBtn.action = #selector(revealViewController()?.revealSideMenu)
 
+        registerCells()
     }
     
+    private func registerCells() {
+        tableView.register(UINib(nibName:RecipesListTableViewCell.identifier, bundle: nil),forCellReuseIdentifier: RecipesListTableViewCell.identifier)
+    }
     
 }
 
-//extension UIViewController{
-//    static var identifier: String {
-//        return String(describing: self)
-//    }
-//    static func instantiate() -> Self{
+//extension SavedVC: UITableViewDelegate , UITableViewDataSource {
+//
+//
+//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 //        
+//        <#code#>
 //    }
+//
+//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        
+//        <#code#>
+//    }
+//
+//
+//
+//
 //}

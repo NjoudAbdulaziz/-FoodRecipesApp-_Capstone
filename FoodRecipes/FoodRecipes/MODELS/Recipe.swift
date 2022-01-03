@@ -1,5 +1,5 @@
 //
-//  Dish.swift
+//  Recipe.swift
 //  FoodRecipes
 //
 //  Created by Njoud Alrshidi on 09/05/1443 AH.

@@ -11,6 +11,8 @@ class ListOfRecipesVC: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
+    var category: FoodCategory!
+    
     var recipes:[Recipe] = [
         .init(id: "id1", recipeImage: UIImage(named: "recipeTwo"), categoryOfRecipe: "category", nameOfTheRecipe: "pizza", timerIcon: UIImage(named: "timer"), timeofRecipe: "30 M", hardIcon: UIImage(named: "menu"), hardOfRecipe: "hard", numberOfThePeopleIcon: UIImage(named: "forkAndKnofa"), numberOfPeople: "6 People"),
         
@@ -27,7 +29,8 @@ class ListOfRecipesVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        title = category?.name
+        registerCells()
     }
     
     private func registerCells() {

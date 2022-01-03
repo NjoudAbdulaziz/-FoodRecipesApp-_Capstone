@@ -5,19 +5,19 @@
 //  Created by Njoud Alrshidi on 09/05/1443 AH.
 //
 
-import UIKit
-class SettingsVC: UIViewController {
-
-    @IBOutlet weak var sideMenuBtn: UIBarButtonItem!
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        sideMenuBtn.target = revealViewController()
-        sideMenuBtn.action = #selector(revealViewController()?.revealSideMenu)
-       
-    }
-    
-}
+//class SearchVC: UIViewController {
+//
+//    @IBOutlet weak var sideMenuBtn: UIBarButtonItem!
+//
+//    override func viewDidLoad() {
+//        super.viewDidLoad()
+//
+//        sideMenuBtn.target = revealViewController()
+//        sideMenuBtn.action = #selector(revealViewController()?.revealSideMenu)
+//
+//    }
+//
+//}
 //    @IBAction func signOutBtn(_ sender: UIButton) {
 //        do {
 //            try Auth.auth().signOut()

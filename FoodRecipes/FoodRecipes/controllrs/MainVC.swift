@@ -185,6 +185,7 @@ extension MainVC : SideMenuVCDelegate {
         }
         vc.didMove(toParent: self)
     }
+    
 }
 
 extension MainVC : UIGestureRecognizerDelegate {

@@ -38,4 +38,36 @@
 //            self.layer.shadowRadius = 0.0
 //        }
 //    }
+
+
 //
+//import UIKit
+//
+//class SearchVC: UIViewController {
+//
+//    @IBOutlet weak var sideMenuBtn: UIBarButtonItem!
+//
+//    override func viewDidLoad() {
+//        super.viewDidLoad()
+//
+//        sideMenuBtn.target = revealViewController()
+//        sideMenuBtn.action = #selector(revealViewController()?.revealSideMenu)
+//
+//    }
+//
+//}
+
+//
+//import UIKit
+//class SettingsVC: UIViewController {
+//
+//    @IBOutlet weak var sideMenuBtn: UIBarButtonItem!
+//
+//    override func viewDidLoad() {
+//        super.viewDidLoad()
+//        sideMenuBtn.target = revealViewController()
+//        sideMenuBtn.action = #selector(revealViewController()?.revealSideMenu)
+//
+//    }
+//
+//}

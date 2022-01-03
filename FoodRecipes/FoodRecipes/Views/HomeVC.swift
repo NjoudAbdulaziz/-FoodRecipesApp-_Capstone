@@ -45,8 +45,8 @@ class HomeVC: UIViewController {
         super.viewDidLoad()
         
         registerCells()
-        
-        //Menu Button Tint Color
+        //..
+        //Menu Button Tint Color...
         //navigationController?.navigationBar.tintColor = .white
         sideMenuBtn.target = revealViewController()
         sideMenuBtn.action = #selector(revealViewController()?.revealSideMenu)
@@ -63,7 +63,7 @@ class HomeVC: UIViewController {
 }
 
 
-extension HomeVC: UICollectionViewDelegate , UICollectionViewDataSource {
+extension HomeVC: UICollectionViewDelegate , UICollectionViewDataSource , UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         switch collectionView {
@@ -92,5 +92,24 @@ extension HomeVC: UICollectionViewDelegate , UICollectionViewDataSource {
         
     }
     
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        
+        return CGSize(width: view.bounds.width, height: view.bounds.width)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        if collectionView == categoryCollectionView {
+            let controller = ListOfRecipesVC.instantiate()
+            controller.category = categories[indexPath.row]
+            navigationController?.pushViewController(controller, animated: true)
+        } else {
+            if collectionView == trendingRecipesCollectionView {
+            let controller =  RecipeDetailsVC.instantiate()
+            controller.recipe = trending[indexPath.row]
+            navigationController?.present(controller,animated: true, completion: nil)
+        }
+    }
+}
     
 }

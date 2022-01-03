@@ -20,9 +20,9 @@ class SignUpVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //        UserApi.getUser(uid: Auth.auth().currentUser?.uid ?? "") { user in
-        //            self.newEmailTF.text = user.email
-        //        }
+//                UserApi.getUser(uid: Auth.auth().currentUser?.uid ?? "") { user in
+//                    self.newEmailTF.text = user.email
+//                }
         
         
         
@@ -50,7 +50,7 @@ class SignUpVC: UIViewController {
                     if check {
                         print("Done Saving in Database")
                         
-                        self.goTotabBarPage()
+                        self.goToMainPage()
                     }
                     else{
                     }
@@ -60,8 +60,8 @@ class SignUpVC: UIViewController {
         }
     }
     
-    private func goTotabBarPage(){
-        let mainView = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "main") as! HomeVC
+    private func goToMainPage(){
+        let mainView = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "main") as! MainVC
         mainView.modalPresentationStyle = .fullScreen
         self.present(mainView, animated: true, completion: nil)
     }

@@ -32,7 +32,7 @@ class SignInVC: UIViewController {
                     
                    
                 }else{
-                    self?.goTotabBarPage()
+                    self?.goToMainPage()
                 }
                 
             }
@@ -40,7 +40,7 @@ class SignInVC: UIViewController {
     }
 
     
-    private func goTotabBarPage(){
+    private func goToMainPage(){
       let mainView = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "main") as! MainVC
       mainView.modalPresentationStyle = .fullScreen
       self.present(mainView, animated: true, completion: nil)
