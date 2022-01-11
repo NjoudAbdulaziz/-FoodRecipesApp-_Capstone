@@ -15,7 +15,7 @@ class SignIn_SignUpVC: UIViewController {
     @IBOutlet weak var dontHaveAccountLabel: UILabel!
     @IBOutlet weak var signUpBtn: UIButton!
     
-    // First loading Func...
+    // First loading Func....
     override func viewDidLoad() {
         super.viewDidLoad()
         SetupProperties()

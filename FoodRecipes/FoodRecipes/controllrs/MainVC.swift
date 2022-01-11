@@ -36,6 +36,7 @@ class MainVC: UIViewController {
         self.sideMenuShadowView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         self.sideMenuShadowView.backgroundColor = .black
         self.sideMenuShadowView.alpha = 0.0
+        
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(TabGestureRecognizer))
         tapGestureRecognizer.numberOfTapsRequired = 1
         tapGestureRecognizer.delegate = self
@@ -96,7 +97,7 @@ class MainVC: UIViewController {
     }
     
     //Call this Button Action from the View Controller you want to Expand/Collapse when tap a button
-    @IBAction open func revealSideMenu(){
+    @IBAction open func revealSideMenu() {
         self.sideMenuState(expanded: self.isExpanded ? false : true)
     }
     
@@ -163,7 +164,7 @@ extension MainVC : SideMenuVCDelegate {
     
     func showViewController<T:UIViewController>(viewController: T.Type , storyboardId : String ) ->() {
         // Remove the previous View
-        for subview in view.subviews{
+        for subview in view.subviews {
             if subview.tag == 99 {
                 subview.removeFromSuperview()
             }

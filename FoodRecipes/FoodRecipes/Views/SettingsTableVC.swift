@@ -33,6 +33,26 @@ class SettingsTableVC: UITableViewController {
         }
     }
 
+
+    
+    @IBAction func clickSwitch(_ sender: UISwitch) {
+        
+            if #available(iOS 15.0, *) {
+                let appDelegate = UIApplication.shared.windows.first
+    
+                if sender.isOn {
+                    appDelegate?.overrideUserInterfaceStyle = .dark
+                    return
+                }
+                appDelegate?.overrideUserInterfaceStyle = .light
+                return
+            }else{
+    
+            }
+    
+    }
+
+
     @IBAction func savedBtnPressed(_ sender: UIButton) {
         
     }

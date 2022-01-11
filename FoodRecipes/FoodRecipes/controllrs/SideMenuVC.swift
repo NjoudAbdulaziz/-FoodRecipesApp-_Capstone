@@ -24,11 +24,11 @@ class SideMenuVC: UIViewController {
     var defaultHighlightedCell: Int = 0
     
     var menu: [SideMenu] = [
-        SideMenu(icon: UIImage(named: "launchScreen-1")!, title: "Home"),
-        SideMenu(icon: UIImage(named: "launchScreen-1")!, title: "Search"),
-        SideMenu(icon: UIImage(named: "launchScreen-1")!, title: "Saved"),
-        SideMenu(icon: UIImage(named: "launchScreen-1")!, title: "Settings"),
-        SideMenu(icon: UIImage(named: "launchScreen-1")!, title: "Profile")
+        SideMenu(icon: UIImage(named: "menu")!, title: "Home"),
+        SideMenu(icon: UIImage(named: "menu")!, title: "Search"),
+        SideMenu(icon: UIImage(named: "menu")!, title: "Saved"),
+        SideMenu(icon: UIImage(named: "menu")!, title: "Settings"),
+        SideMenu(icon: UIImage(named: "menu")!, title: "Profile")
     ]
     
     
@@ -72,23 +72,11 @@ extension SideMenuVC: UITableViewDelegate , UITableViewDataSource{
         guard let cell = tableView.dequeueReusableCell(withIdentifier: SideMenuTableViewCell.identifire, for: indexPath) as? SideMenuTableViewCell else{fatalError("xib doesn't exist")}
         cell.iconImageView.image = self.menu[indexPath.row].icon
         cell.titleLabel.text = self.menu[indexPath.row].title
-        
-        // Highlighted color any color i want
-        
       return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         self.delegate?.selectedCell(indexPath.row)
     }
-    //MARK:- ممكن اضيفه
-    
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//
-//        // ...
-//
-//        // Remove highlighted color when you press the 'Profile' and 'Like us on facebook' cell
-//        if indexPath.row == 4 || indexPath.row == 6 {
-//            tableView.deselectRow(at: indexPath, animated: true)
-//        }
-//    }
+
+
 }

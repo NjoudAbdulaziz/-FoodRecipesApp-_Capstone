@@ -20,6 +20,6 @@ struct Recipe {
     let hardOfRecipe : String?
     let numberOfThePeopleIcon : UIImage?
     let numberOfPeople : String?
-    
+ 
 }
 

@@ -19,7 +19,6 @@
 		B76E6DA92766979E0076D074 /* TrendingResipesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B76E6DA72766979E0076D074 /* TrendingResipesCollectionViewCell.xib */; };
 		B76E6DAB27669C300076D074 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76E6DAA27669C300076D074 /* Recipe.swift */; };
 		B76E6DAD2767392B0076D074 /* RecipeDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76E6DAC2767392B0076D074 /* RecipeDetails.swift */; };
-		B76E6DB12767B81F0076D074 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76E6DB02767B81F0076D074 /* SettingsVC.swift */; };
 		B76E6DB32768A4350076D074 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76E6DB22768A4350076D074 /* SearchVC.swift */; };
 		B76E6DB52768AAC80076D074 /* SavedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76E6DB42768AAC80076D074 /* SavedVC.swift */; };
 		B76E6DBB276A154B0076D074 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = B76E6DBA276A154B0076D074 /* Kingfisher */; };
@@ -66,7 +65,6 @@
 		B76E6DA72766979E0076D074 /* TrendingResipesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrendingResipesCollectionViewCell.xib; sourceTree = "<group>"; };
 		B76E6DAA27669C300076D074 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 		B76E6DAC2767392B0076D074 /* RecipeDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetails.swift; sourceTree = "<group>"; };
-		B76E6DB02767B81F0076D074 /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
 		B76E6DB22768A4350076D074 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
 		B76E6DB42768AAC80076D074 /* SavedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedVC.swift; sourceTree = "<group>"; };
 		B76E6DBC276A17910076D074 /* Extension+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+String.swift"; sourceTree = "<group>"; };
@@ -129,7 +127,6 @@
 				B76E6D95276609B10076D074 /* HomeVC.swift */,
 				B76E6DB22768A4350076D074 /* SearchVC.swift */,
 				B76E6DB42768AAC80076D074 /* SavedVC.swift */,
-				B76E6DB02767B81F0076D074 /* SettingsVC.swift */,
 				B7CC03CD277B26D600963F9C /* ProfileVC.swift */,
 				B7CC03DA277D168700963F9C /* ListOfRecipesVC.swift */,
 				B770BB26278190C10000C630 /* RecipeDetailsVC.swift */,
@@ -383,7 +380,6 @@
 				B7CC03D1277B279E00963F9C /* SideMenuTableViewCell.swift in Sources */,
 				B7CC03DB277D168700963F9C /* ListOfRecipesVC.swift in Sources */,
 				B78C17002762174B009F4973 /* UserApi.swift in Sources */,
-				B76E6DB12767B81F0076D074 /* SettingsVC.swift in Sources */,
 				B78C16DE2761D500009F4973 /* AppDelegate.swift in Sources */,
 				B76E6DA82766979E0076D074 /* TrendingResipesCollectionViewCell.swift in Sources */,
 				B7CC03C8277B031C00963F9C /* SideMenuVC.swift in Sources */,
