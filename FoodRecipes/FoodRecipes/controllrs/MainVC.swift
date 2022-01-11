@@ -74,7 +74,7 @@ class MainVC: UIViewController {
         view.addGestureRecognizer(panGestureRecognizer)
         
         // Default Main View Controller
-        showViewController(viewController: UINavigationController.self , storyboardId: "HomeNavID")
+        showViewController(viewController: UINavigationController.self , storyboardId: "SearchNavID")
     }
     
 
@@ -139,9 +139,6 @@ extension MainVC : SideMenuVCDelegate {
     
     func selectedCell(_ row: Int) {
         switch row {
-        case 0:
-            //Home
-            self.showViewController(viewController: UINavigationController.self , storyboardId: "HomeNavID")
         case 1:
             //Search
             self.showViewController(viewController: UINavigationController.self , storyboardId: "SearchNavID")
