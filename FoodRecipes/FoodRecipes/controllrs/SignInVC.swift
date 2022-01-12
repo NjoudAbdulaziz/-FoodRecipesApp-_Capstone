@@ -15,9 +15,12 @@ class SignInVC: UIViewController {
     //UIView Properties.....
     @IBOutlet weak var email: UITextField!
     @IBOutlet weak var password: UITextField!
+    @IBOutlet weak var signInBtn: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        signInBtn.layer.cornerRadius = signInBtn.layer.frame.height/2
 
     }
     // MARK: - Login Button

@@ -16,10 +16,12 @@ class SignUpVC: UIViewController {
     @IBOutlet weak var userNameTF: UITextField!
     @IBOutlet weak var newEmailTF: UITextField!
     @IBOutlet weak var newPasswordTF: UITextField!
-    
+    @IBOutlet weak var signUbBtn: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        signUbBtn.layer.cornerRadius = signUbBtn.layer.frame.height/2
+
       }
     
     
