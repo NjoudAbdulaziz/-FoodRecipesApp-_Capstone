@@ -12,7 +12,7 @@ import CoreData
 class DataController {
     
     // MARK: Shared Instance
-    static let shared = DataController(modelName: "SuperMealsRecipe")
+    static let shared = DataController(modelName: "FoodRecipe")
     
     // MARK: Properties
     let persistentContainer:NSPersistentContainer

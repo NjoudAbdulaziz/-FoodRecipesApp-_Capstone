@@ -8,9 +8,10 @@
 import UIKit
 import Firebase
 import FirebaseAuth
-import FirebaseFirestore
+import SwiftMessages
 
 class SignInVC: UIViewController {
+  
     //UIView Properties.....
     @IBOutlet weak var email: UITextField!
     @IBOutlet weak var password: UITextField!
@@ -19,31 +20,57 @@ class SignInVC: UIViewController {
         super.viewDidLoad()
 
     }
+    // MARK: - Login Button
     
     @IBAction func logInBtn(_ sender: UIButton) {
-        if let email = email.text , let password = password.text{
-            Auth.auth().signIn(withEmail: email, password: password) { [weak self]
-                AuthResult , error in
-                guard let strongSelf = self else {return}
-                if let eerror = error {
-                    let alert = UIAlertController(title: "login failed", message: "couldn't find your Account!", preferredStyle: .alert)
-                    alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-                    self?.present(alert, animated: true)
-                    
-                   
-                }else{
-                    self?.goToMainPage()
-                }
-                
+        
+        if email.text?.isEmpty ?? true || password.text?.isEmpty ?? true {
+            let message: MessageView = MessageView.viewFromNib(layout: .cardView)
+            message.configureTheme(.error)
+            message.configureContent(body: "Please fill Email and Password !")
+            var config = SwiftMessages.defaultConfig
+            config.presentationContext = .view(view)
+            config.duration = .automatic
+            config.presentationStyle = .top
+            SwiftMessages.show(config: config, view: message)
+            
+            return
+           
+             } else {
+                  login()
             }
         }
-    }
-
     
-    private func goToMainPage(){
+    // MARK: - Auth Login ..
+    
+    func login() {
+        Auth.auth().signIn(withEmail: email.text ?? "" , password: password.text ?? "") { [weak self] authResult , error in
+            guard let strongSelf = self else {return}
+            if let error = error {
+                
+                let message: MessageView = MessageView.viewFromNib(layout: .cardView)
+                message.configureTheme(.info)
+                message.configureContent(body: "Sorry, Couldn't find your Account!")
+                var config = SwiftMessages.defaultConfig
+                config.duration = .automatic
+                config.presentationStyle = .top
+                SwiftMessages.show(config: config, view: message)
+                
+                return
+            
+                 } else {
+                        self?.goToMainPage()
+              }
+          }
+      }
+    
+    // MARK: - To Go To The Main Page
+    
+    private func goToMainPage() {
       let mainView = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "main") as! MainVC
       mainView.modalPresentationStyle = .fullScreen
       self.present(mainView, animated: true, completion: nil)
     }
     
 }
+

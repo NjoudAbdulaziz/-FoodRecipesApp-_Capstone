@@ -7,16 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B704F274278F505600314F8F /* SwiftMessages in Frameworks */ = {isa = PBXBuildFile; productRef = B704F273278F505600314F8F /* SwiftMessages */; };
 		B73E8B122765EA8B00AACC31 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73E8B112765EA8B00AACC31 /* SignInVC.swift */; };
 		B73E8B142765EDEB00AACC31 /* SignIn_SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73E8B132765EDEB00AACC31 /* SignIn_SignUpVC.swift */; };
 		B76E6D93276605680076D074 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B76E6D92276605680076D074 /* GoogleService-Info.plist */; };
-		B76E6DA22766878F0076D074 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76E6DA12766878F0076D074 /* CardView.swift */; };
 		B76E6DB32768A4350076D074 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76E6DB22768A4350076D074 /* SearchVC.swift */; };
 		B76E6DB52768AAC80076D074 /* SavedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76E6DB42768AAC80076D074 /* SavedVC.swift */; };
 		B76E6DBB276A154B0076D074 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = B76E6DBA276A154B0076D074 /* Kingfisher */; };
-		B76E6DBD276A17910076D074 /* Extension+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76E6DBC276A17910076D074 /* Extension+String.swift */; };
 		B770BB27278190C10000C630 /* RecipeDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B770BB26278190C10000C630 /* RecipeDetailsVC.swift */; };
-		B770BB292781965A0000C630 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B770BB282781965A0000C630 /* UIViewController+Extensions.swift */; };
 		B78C16DE2761D500009F4973 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78C16DD2761D500009F4973 /* AppDelegate.swift */; };
 		B78C16E02761D500009F4973 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78C16DF2761D500009F4973 /* SceneDelegate.swift */; };
 		B78C16E52761D500009F4973 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B78C16E32761D500009F4973 /* Main.storyboard */; };
@@ -53,12 +51,9 @@
 		B73E8B112765EA8B00AACC31 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		B73E8B132765EDEB00AACC31 /* SignIn_SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignIn_SignUpVC.swift; sourceTree = "<group>"; };
 		B76E6D92276605680076D074 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		B76E6DA12766878F0076D074 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		B76E6DB22768A4350076D074 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
 		B76E6DB42768AAC80076D074 /* SavedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedVC.swift; sourceTree = "<group>"; };
-		B76E6DBC276A17910076D074 /* Extension+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+String.swift"; sourceTree = "<group>"; };
 		B770BB26278190C10000C630 /* RecipeDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailsVC.swift; sourceTree = "<group>"; };
-		B770BB282781965A0000C630 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		B78C16DA2761D500009F4973 /* FoodRecipes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodRecipes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B78C16DD2761D500009F4973 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B78C16DF2761D500009F4973 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -99,6 +94,7 @@
 				B78C16F52761D6F8009F4973 /* FirebaseAnalytics in Frameworks */,
 				B78C16F72761D6F8009F4973 /* FirebaseAuth in Frameworks */,
 				B78C16F92761D6F8009F4973 /* FirebaseFirestore in Frameworks */,
+				B704F274278F505600314F8F /* SwiftMessages in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,25 +128,14 @@
 		B76E6D9727661C890076D074 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
-				B76E6DA0276686DF0076D074 /* CardView */,
 				B7CC03D4277B2D0700963F9C /* TableViewCell */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
 		};
-		B76E6DA0276686DF0076D074 /* CardView */ = {
-			isa = PBXGroup;
-			children = (
-				B76E6DA12766878F0076D074 /* CardView.swift */,
-			);
-			path = CardView;
-			sourceTree = "<group>";
-		};
 		B76E6DB8276A10E00076D074 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				B76E6DBC276A17910076D074 /* Extension+String.swift */,
-				B770BB282781965A0000C630 /* UIViewController+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -282,6 +267,7 @@
 				B78C16F62761D6F8009F4973 /* FirebaseAuth */,
 				B78C16F82761D6F8009F4973 /* FirebaseFirestore */,
 				B76E6DBA276A154B0076D074 /* Kingfisher */,
+				B704F273278F505600314F8F /* SwiftMessages */,
 			);
 			productName = FoodRecipes;
 			productReference = B78C16DA2761D500009F4973 /* FoodRecipes.app */;
@@ -314,6 +300,7 @@
 			packageReferences = (
 				B78C16F32761D6F8009F4973 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				B76E6DB9276A154B0076D074 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				B704F272278F505600314F8F /* XCRemoteSwiftPackageReference "SwiftMessages" */,
 			);
 			productRefGroup = B78C16DB2761D500009F4973 /* Products */;
 			projectDirPath = "";
@@ -349,7 +336,6 @@
 				B7C8167E278DF4CC00E87DD4 /* ApiClient.swift in Sources */,
 				B7C81684278DF57600E87DD4 /* AppConstants.swift in Sources */,
 				B78C170F27653CFF009F4973 /* OnboardingVC.swift in Sources */,
-				B770BB292781965A0000C630 /* UIViewController+Extensions.swift in Sources */,
 				B78C16FD2762129A009F4973 /* User.swift in Sources */,
 				B7CC03CA277B034F00963F9C /* MainVC.swift in Sources */,
 				B7C81680278DF50400E87DD4 /* CategoriesList.swift in Sources */,
@@ -371,8 +357,6 @@
 				B76E6DB52768AAC80076D074 /* SavedVC.swift in Sources */,
 				B770BB27278190C10000C630 /* RecipeDetailsVC.swift in Sources */,
 				B7CC03CE277B26D600963F9C /* ProfileVC.swift in Sources */,
-				B76E6DBD276A17910076D074 /* Extension+String.swift in Sources */,
-				B76E6DA22766878F0076D074 /* CardView.swift in Sources */,
 				B7CC03CC277B04C900963F9C /* SideMenu.swift in Sources */,
 				B78C16E02761D500009F4973 /* SceneDelegate.swift in Sources */,
 			);
@@ -596,6 +580,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		B704F272278F505600314F8F /* XCRemoteSwiftPackageReference "SwiftMessages" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftKickMobile/SwiftMessages";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 		B76E6DB9276A154B0076D074 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
@@ -615,6 +607,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		B704F273278F505600314F8F /* SwiftMessages */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B704F272278F505600314F8F /* XCRemoteSwiftPackageReference "SwiftMessages" */;
+			productName = SwiftMessages;
+		};
 		B76E6DBA276A154B0076D074 /* Kingfisher */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = B76E6DB9276A154B0076D074 /* XCRemoteSwiftPackageReference "Kingfisher" */;

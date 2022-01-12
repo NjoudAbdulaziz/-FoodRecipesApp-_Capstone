@@ -41,8 +41,8 @@ class SearchVC: UIViewController {
     }
     
     
-    @IBAction func searchSegmentChanged(_ sender: Any) {
-        loadList(selectedSegmentIndex: (sender as AnyObject).selectedSegmentIndex)
+    @IBAction func searchSegmentChanged(_ sender: UISegmentedControl) {
+        loadList(selectedSegmentIndex: sender.selectedSegmentIndex)
 
     }
     
@@ -173,12 +173,12 @@ extension SearchVC: UITableViewDataSource, UITableViewDelegate{
         return cell
     }
     
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let shortRecipe = self.recipeList[(indexPath as NSIndexPath).row]
         performSegue(withIdentifier: kRecipeSegue, sender: shortRecipe)
         tableView.deselectRow(at: indexPath, animated: true)
     }
-    
     
 }
 

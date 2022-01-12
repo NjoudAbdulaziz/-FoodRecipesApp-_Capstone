@@ -8,7 +8,7 @@
 import UIKit
 import Firebase
 import FirebaseAuth
-import FirebaseFirestore
+import SwiftMessages
 
 class SignUpVC: UIViewController {
     
@@ -20,50 +20,69 @@ class SignUpVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//                UserApi.getUser(uid: Auth.auth().currentUser?.uid ?? "") { user in
-//                    self.newEmailTF.text = user.email
-//                }
-        
-        
-        
-    }
+      }
+    
+    
+    // MARK: - Sign up  Button ....
     
     @IBAction func register(_ sender: Any) {
-        signUp()
-        
-    }
+        if userNameTF.text?.isEmpty == true || newEmailTF.text?.isEmpty == true || newPasswordTF.text?.isEmpty == true {
+            
+            let message: MessageView = MessageView.viewFromNib(layout: .cardView)
+            message.configureTheme(.error)
+            message.configureContent(body: "Please fill Name , Email and Password Fields !")
+            var config = SwiftMessages.defaultConfig
+            config.duration = .automatic
+            config.presentationStyle = .top
+            SwiftMessages.show(config: config, view: message)
+            
+            return
+        }
+        else {
+            signUp()
+           }
+        }
     
-    func signUp(){
+    // MARK: - Auth  create new account .....
+    
+    func signUp() {
         
-        if let email = newEmailTF.text , let password = newPasswordTF.text {
-            Auth.auth().createUser(withEmail: email, password: password) {
-                (AuthResul, error) in
-                guard let user = AuthResul?.user, error == nil else {
-                    print("email\(String(describing:AuthResul?.user.email ))")
-                    print("uid\(String(describing:AuthResul?.user.uid ))")
-                    
-                    return
-                }
+        Auth.auth().createUser(withEmail: newEmailTF.text ?? "" , password: newPasswordTF.text ?? "" ) { authResul, error in
+            if let error = error {
                 
-                UserApi.addUser(name: self.userNameTF.text ?? "", uid: AuthResul?.user.uid ?? "" , email: self.newEmailTF.text ?? "" , completion: { check in
-                    
-                    if check {
-                        print("Done Saving in Database")
-                        
-                        self.goToMainPage()
-                    }
-                    else{
-                    }
-                })
+                let message: MessageView = MessageView.viewFromNib(layout: .cardView)
+                message.configureTheme(.error)
+                message.configureContent(body: "Email address is alreaady use by another account!")
+                var config = SwiftMessages.defaultConfig
+                config.duration = .automatic
+                config.presentationStyle = .top
+                SwiftMessages.show(config: config, view: message)
                 
+                return
             }
+            else {
+                UserApi.addUser(name: self.userNameTF.text ?? "", uid: authResul?.user.uid ?? "" , email: self.newEmailTF.text ?? "" , completion: { check in
+                            if check {
+                                print("Done Saving in Database")
+                
+                                self.goToMainPage()
+                            }
+            })
+            
+            
+                    }
+            
         }
     }
     
-    private func goToMainPage(){
+    // MARK: - To Go To Main Page
+    
+    private func goToMainPage() {
         let mainView = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "main") as! MainVC
         mainView.modalPresentationStyle = .fullScreen
         self.present(mainView, animated: true, completion: nil)
     }
     
 }
+
+

@@ -9,7 +9,6 @@ import UIKit
 
 class SignIn_SignUpVC: UIViewController {
 
-    
     //UIView Properties...
     @IBOutlet weak var signInBtn: UIButton!
     @IBOutlet weak var dontHaveAccountLabel: UILabel!
@@ -32,7 +31,7 @@ class SignIn_SignUpVC: UIViewController {
     }
     
     //Setup UI elements...
-    func SetupProperties(){
+    func SetupProperties() {
         
         //SignIn Button...
         signInBtn.layer.cornerRadius = signInBtn.layer.frame.height/2

@@ -37,7 +37,7 @@ class SavedRecipeDetailsVC : UIViewController {
             saveButton.setImage(UIImage(systemName: "heart.fill"), for: UIControl.State.selected)
         } else {
             // Fallback on earlier versions  heart_filled
-            saveButton.setImage(UIImage(named: "heart_filled"), for: UIControl.State.selected)
+            saveButton.setImage(UIImage(systemName: "heart_filled"), for: UIControl.State.selected)
         }
         tableView.dataSource = self
         tableView.delegate = self

@@ -38,10 +38,10 @@ class RecipeDetailsVC: UIViewController {
         selectedSegmented.setTitleTextAttributes(selectedtitleTextAttributes, for: .selected)
         savedButton.setTitle("Saved", for: UIControl.State.selected)
         if #available(iOS 13.0, *) {
-            savedButton.setImage(UIImage(systemName: "bookmark.fill"), for: UIControl.State.selected)
+            savedButton.setImage(UIImage(systemName: "heart.fill"), for: UIControl.State.selected)
         } else {
             // Fallback on earlier versions  heart_filled
-            savedButton.setImage(UIImage(systemName: "bookmark.fill"), for: UIControl.State.selected)
+            savedButton.setImage(UIImage(named: "heart_filled"), for: UIControl.State.selected)
         }
         guard let recipe = shortRecipe else {
             return
