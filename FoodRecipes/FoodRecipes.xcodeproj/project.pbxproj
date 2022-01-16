@@ -13,7 +13,6 @@
 		B76E6D93276605680076D074 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B76E6D92276605680076D074 /* GoogleService-Info.plist */; };
 		B76E6DB32768A4350076D074 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76E6DB22768A4350076D074 /* SearchVC.swift */; };
 		B76E6DB52768AAC80076D074 /* SavedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76E6DB42768AAC80076D074 /* SavedVC.swift */; };
-		B76E6DBB276A154B0076D074 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = B76E6DBA276A154B0076D074 /* Kingfisher */; };
 		B770BB27278190C10000C630 /* RecipeDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B770BB26278190C10000C630 /* RecipeDetailsVC.swift */; };
 		B78C16DE2761D500009F4973 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78C16DD2761D500009F4973 /* AppDelegate.swift */; };
 		B78C16E02761D500009F4973 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78C16DF2761D500009F4973 /* SceneDelegate.swift */; };
@@ -90,7 +89,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B76E6DBB276A154B0076D074 /* Kingfisher in Frameworks */,
 				B78C16F52761D6F8009F4973 /* FirebaseAnalytics in Frameworks */,
 				B78C16F72761D6F8009F4973 /* FirebaseAuth in Frameworks */,
 				B78C16F92761D6F8009F4973 /* FirebaseFirestore in Frameworks */,
@@ -114,13 +112,8 @@
 		B76E6D94276609880076D074 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				B76E6DB22768A4350076D074 /* SearchVC.swift */,
-				B76E6DB42768AAC80076D074 /* SavedVC.swift */,
-				B770BB26278190C10000C630 /* RecipeDetailsVC.swift */,
-				B7C81686278E060C00E87DD4 /* UIViewController + UIAlertController.swift */,
-				B7CC03DA277D168700963F9C /* SavedRecipeDetailsVC.swift */,
-				B7CC03CD277B26D600963F9C /* ProfileVC.swift */,
-				B7EC69082783173E00F72646 /* SettingsTableVC.swift */,
+				B78C16E82761D503009F4973 /* LaunchScreen.storyboard */,
+				B78C16E32761D500009F4973 /* Main.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -136,6 +129,7 @@
 		B76E6DB8276A10E00076D074 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				B7C81686278E060C00E87DD4 /* UIViewController + UIAlertController.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -163,13 +157,11 @@
 				B76E6DB8276A10E00076D074 /* Extensions */,
 				B76E6D9727661C890076D074 /* CustomViews */,
 				B76E6D94276609880076D074 /* Views */,
-				B78C1707276234E2009F4973 /* controllrs */,
+				B78C1707276234E2009F4973 /* Controllers */,
 				B78C16FE2762129F009F4973 /* MODELS */,
 				B78C16DF2761D500009F4973 /* SceneDelegate.swift */,
 				B78C16DD2761D500009F4973 /* AppDelegate.swift */,
 				B78C16E62761D503009F4973 /* Assets.xcassets */,
-				B78C16E82761D503009F4973 /* LaunchScreen.storyboard */,
-				B78C16E32761D500009F4973 /* Main.storyboard */,
 				B78C16EB2761D503009F4973 /* Info.plist */,
 				B73E8B102765CBD200AACC31 /* maby */,
 			);
@@ -181,24 +173,62 @@
 			children = (
 				B7C81673278DEFB900E87DD4 /* CoreData */,
 				B7C8167C278DF48E00E87DD4 /* Networking */,
-				B7C81683278DF57600E87DD4 /* AppConstants.swift */,
-				B78C16FC27621299009F4973 /* User.swift */,
-				B78C16FF2762174B009F4973 /* UserApi.swift */,
+				B7916DE82794A9A90024D2DA /* Firebase */,
 				B7CC03CB277B04C800963F9C /* SideMenu.swift */,
+				B7C81683278DF57600E87DD4 /* AppConstants.swift */,
 			);
 			path = MODELS;
 			sourceTree = "<group>";
 		};
-		B78C1707276234E2009F4973 /* controllrs */ = {
+		B78C1707276234E2009F4973 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B7916DEB2794AD020024D2DA /* ViewController */,
+				B7916DEA2794AB150024D2DA /* FirebaseAuth */,
+				B7916DE92794AAB90024D2DA /* SideMenu */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B7916DE82794A9A90024D2DA /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				B78C16FC27621299009F4973 /* User.swift */,
+				B78C16FF2762174B009F4973 /* UserApi.swift */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		B7916DE92794AAB90024D2DA /* SideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				B7CC03C9277B034F00963F9C /* MainVC.swift */,
+				B7CC03C7277B031C00963F9C /* SideMenuVC.swift */,
+			);
+			path = SideMenu;
+			sourceTree = "<group>";
+		};
+		B7916DEA2794AB150024D2DA /* FirebaseAuth */ = {
 			isa = PBXGroup;
 			children = (
 				B73E8B132765EDEB00AACC31 /* SignIn_SignUpVC.swift */,
 				B73E8B112765EA8B00AACC31 /* SignInVC.swift */,
 				B78C170C2762383B009F4973 /* SignUpVC.swift */,
-				B7CC03C7277B031C00963F9C /* SideMenuVC.swift */,
-				B7CC03C9277B034F00963F9C /* MainVC.swift */,
 			);
-			path = controllrs;
+			path = FirebaseAuth;
+			sourceTree = "<group>";
+		};
+		B7916DEB2794AD020024D2DA /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B76E6DB22768A4350076D074 /* SearchVC.swift */,
+				B76E6DB42768AAC80076D074 /* SavedVC.swift */,
+				B770BB26278190C10000C630 /* RecipeDetailsVC.swift */,
+				B7CC03DA277D168700963F9C /* SavedRecipeDetailsVC.swift */,
+				B7CC03CD277B26D600963F9C /* ProfileVC.swift */,
+				B7EC69082783173E00F72646 /* SettingsTableVC.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 		B7C81673278DEFB900E87DD4 /* CoreData */ = {
@@ -266,7 +296,6 @@
 				B78C16F42761D6F8009F4973 /* FirebaseAnalytics */,
 				B78C16F62761D6F8009F4973 /* FirebaseAuth */,
 				B78C16F82761D6F8009F4973 /* FirebaseFirestore */,
-				B76E6DBA276A154B0076D074 /* Kingfisher */,
 				B704F273278F505600314F8F /* SwiftMessages */,
 			);
 			productName = FoodRecipes;
@@ -299,7 +328,6 @@
 			mainGroup = B78C16D12761D500009F4973;
 			packageReferences = (
 				B78C16F32761D6F8009F4973 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
-				B76E6DB9276A154B0076D074 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 				B704F272278F505600314F8F /* XCRemoteSwiftPackageReference "SwiftMessages" */,
 			);
 			productRefGroup = B78C16DB2761D500009F4973 /* Products */;
@@ -588,14 +616,6 @@
 				kind = branch;
 			};
 		};
-		B76E6DB9276A154B0076D074 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 7.0.0;
-			};
-		};
 		B78C16F32761D6F8009F4973 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
@@ -611,11 +631,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = B704F272278F505600314F8F /* XCRemoteSwiftPackageReference "SwiftMessages" */;
 			productName = SwiftMessages;
-		};
-		B76E6DBA276A154B0076D074 /* Kingfisher */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = B76E6DB9276A154B0076D074 /* XCRemoteSwiftPackageReference "Kingfisher" */;
-			productName = Kingfisher;
 		};
 		B78C16F42761D6F8009F4973 /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
