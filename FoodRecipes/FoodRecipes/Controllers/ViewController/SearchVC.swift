@@ -24,8 +24,8 @@ class SearchVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        sideMenuBtn.target = revealViewController()
-        sideMenuBtn.action = #selector(revealViewController()?.revealSideMenu)
+      sideMenuBtn.target = revealViewController()
+      sideMenuBtn.action = #selector(revealViewController()?.revealSideMenu)
         
         tableView.dataSource = self
         tableView.delegate = self
@@ -173,6 +173,7 @@ extension SearchVC: UITableViewDataSource, UITableViewDelegate{
     
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("I am here")
         let shortRecipe = self.recipeList[(indexPath as NSIndexPath).row]
         performSegue(withIdentifier: kRecipeSegue, sender: shortRecipe)
         tableView.deselectRow(at: indexPath, animated: true)

@@ -13,6 +13,7 @@ import SwiftMessages
 class SignUpVC: UIViewController {
     
     //UIView Properties...
+    @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var userNameTF: UITextField!
     @IBOutlet weak var newEmailTF: UITextField!
     @IBOutlet weak var newPasswordTF: UITextField!
@@ -21,6 +22,8 @@ class SignUpVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         signUbBtn.layer.cornerRadius = signUbBtn.layer.frame.height/2
+        //Background of The SignUpVC Page
+        imageView.image = UIImage(named: "1")
 
       }
     

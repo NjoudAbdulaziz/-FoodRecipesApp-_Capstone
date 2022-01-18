@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B704F274278F505600314F8F /* SwiftMessages in Frameworks */ = {isa = PBXBuildFile; productRef = B704F273278F505600314F8F /* SwiftMessages */; };
+		B7375CD027973B92009C616F /* NSAttributedStringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7375CCF27973B92009C616F /* NSAttributedStringExtension.swift */; };
 		B73E8B122765EA8B00AACC31 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73E8B112765EA8B00AACC31 /* SignInVC.swift */; };
 		B73E8B142765EDEB00AACC31 /* SignIn_SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73E8B132765EDEB00AACC31 /* SignIn_SignUpVC.swift */; };
 		B76E6D93276605680076D074 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B76E6D92276605680076D074 /* GoogleService-Info.plist */; };
@@ -25,9 +26,6 @@
 		B78C16FD2762129A009F4973 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78C16FC27621299009F4973 /* User.swift */; };
 		B78C17002762174B009F4973 /* UserApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78C16FF2762174B009F4973 /* UserApi.swift */; };
 		B78C170D2762383B009F4973 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78C170C2762383B009F4973 /* SignUpVC.swift */; };
-		B78C170F27653CFF009F4973 /* OnboardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78C170E27653CFF009F4973 /* OnboardingVC.swift */; };
-		B78C1711276544CF009F4973 /* OnboardingSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78C1710276544CF009F4973 /* OnboardingSlide.swift */; };
-		B78C17132765495C009F4973 /* OnbordingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78C17122765495B009F4973 /* OnbordingCollectionViewCell.swift */; };
 		B7C81676278DF06400E87DD4 /* Recipe + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C81675278DF06400E87DD4 /* Recipe + Extension.swift */; };
 		B7C81678278DF11D00E87DD4 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C81677278DF11D00E87DD4 /* DataController.swift */; };
 		B7C8167B278DF1DF00E87DD4 /* FoodRecipe.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B7C81679278DF1DF00E87DD4 /* FoodRecipe.xcdatamodeld */; };
@@ -39,7 +37,7 @@
 		B7CC03C8277B031C00963F9C /* SideMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CC03C7277B031C00963F9C /* SideMenuVC.swift */; };
 		B7CC03CA277B034F00963F9C /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CC03C9277B034F00963F9C /* MainVC.swift */; };
 		B7CC03CC277B04C900963F9C /* SideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CC03CB277B04C800963F9C /* SideMenu.swift */; };
-		B7CC03CE277B26D600963F9C /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CC03CD277B26D600963F9C /* ProfileVC.swift */; };
+		B7CC03CE277B26D600963F9C /* AboutUsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CC03CD277B26D600963F9C /* AboutUsVC.swift */; };
 		B7CC03D1277B279E00963F9C /* SideMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CC03CF277B279E00963F9C /* SideMenuTableViewCell.swift */; };
 		B7CC03D2277B279E00963F9C /* SideMenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7CC03D0277B279E00963F9C /* SideMenuTableViewCell.xib */; };
 		B7CC03DB277D168700963F9C /* SavedRecipeDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CC03DA277D168700963F9C /* SavedRecipeDetailsVC.swift */; };
@@ -47,6 +45,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B7375CCF27973B92009C616F /* NSAttributedStringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSAttributedStringExtension.swift; sourceTree = "<group>"; };
 		B73E8B112765EA8B00AACC31 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		B73E8B132765EDEB00AACC31 /* SignIn_SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignIn_SignUpVC.swift; sourceTree = "<group>"; };
 		B76E6D92276605680076D074 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -63,9 +62,6 @@
 		B78C16FC27621299009F4973 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		B78C16FF2762174B009F4973 /* UserApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserApi.swift; sourceTree = "<group>"; };
 		B78C170C2762383B009F4973 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
-		B78C170E27653CFF009F4973 /* OnboardingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingVC.swift; sourceTree = "<group>"; };
-		B78C1710276544CF009F4973 /* OnboardingSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSlide.swift; sourceTree = "<group>"; };
-		B78C17122765495B009F4973 /* OnbordingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnbordingCollectionViewCell.swift; sourceTree = "<group>"; };
 		B7C81675278DF06400E87DD4 /* Recipe + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Recipe + Extension.swift"; sourceTree = "<group>"; };
 		B7C81677278DF11D00E87DD4 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		B7C8167A278DF1DF00E87DD4 /* FoodRecipe.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FoodRecipe.xcdatamodel; sourceTree = "<group>"; };
@@ -77,7 +73,7 @@
 		B7CC03C7277B031C00963F9C /* SideMenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuVC.swift; sourceTree = "<group>"; };
 		B7CC03C9277B034F00963F9C /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		B7CC03CB277B04C800963F9C /* SideMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenu.swift; sourceTree = "<group>"; };
-		B7CC03CD277B26D600963F9C /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		B7CC03CD277B26D600963F9C /* AboutUsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsVC.swift; sourceTree = "<group>"; };
 		B7CC03CF277B279E00963F9C /* SideMenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuTableViewCell.swift; sourceTree = "<group>"; };
 		B7CC03D0277B279E00963F9C /* SideMenuTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SideMenuTableViewCell.xib; sourceTree = "<group>"; };
 		B7CC03DA277D168700963F9C /* SavedRecipeDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedRecipeDetailsVC.swift; sourceTree = "<group>"; };
@@ -99,16 +95,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B73E8B102765CBD200AACC31 /* maby */ = {
-			isa = PBXGroup;
-			children = (
-				B78C170E27653CFF009F4973 /* OnboardingVC.swift */,
-				B78C17122765495B009F4973 /* OnbordingCollectionViewCell.swift */,
-				B78C1710276544CF009F4973 /* OnboardingSlide.swift */,
-			);
-			path = maby;
-			sourceTree = "<group>";
-		};
 		B76E6D94276609880076D074 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -130,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				B7C81686278E060C00E87DD4 /* UIViewController + UIAlertController.swift */,
+				B7375CCF27973B92009C616F /* NSAttributedStringExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -163,7 +150,6 @@
 				B78C16DD2761D500009F4973 /* AppDelegate.swift */,
 				B78C16E62761D503009F4973 /* Assets.xcassets */,
 				B78C16EB2761D503009F4973 /* Info.plist */,
-				B73E8B102765CBD200AACC31 /* maby */,
 			);
 			path = FoodRecipes;
 			sourceTree = "<group>";
@@ -225,7 +211,7 @@
 				B76E6DB42768AAC80076D074 /* SavedVC.swift */,
 				B770BB26278190C10000C630 /* RecipeDetailsVC.swift */,
 				B7CC03DA277D168700963F9C /* SavedRecipeDetailsVC.swift */,
-				B7CC03CD277B26D600963F9C /* ProfileVC.swift */,
+				B7CC03CD277B26D600963F9C /* AboutUsVC.swift */,
 				B7EC69082783173E00F72646 /* SettingsTableVC.swift */,
 			);
 			path = ViewController;
@@ -363,11 +349,9 @@
 				B7EC69092783173E00F72646 /* SettingsTableVC.swift in Sources */,
 				B7C8167E278DF4CC00E87DD4 /* ApiClient.swift in Sources */,
 				B7C81684278DF57600E87DD4 /* AppConstants.swift in Sources */,
-				B78C170F27653CFF009F4973 /* OnboardingVC.swift in Sources */,
 				B78C16FD2762129A009F4973 /* User.swift in Sources */,
 				B7CC03CA277B034F00963F9C /* MainVC.swift in Sources */,
 				B7C81680278DF50400E87DD4 /* CategoriesList.swift in Sources */,
-				B78C17132765495C009F4973 /* OnbordingCollectionViewCell.swift in Sources */,
 				B76E6DB32768A4350076D074 /* SearchVC.swift in Sources */,
 				B73E8B122765EA8B00AACC31 /* SignInVC.swift in Sources */,
 				B7CC03D1277B279E00963F9C /* SideMenuTableViewCell.swift in Sources */,
@@ -378,13 +362,13 @@
 				B78C16DE2761D500009F4973 /* AppDelegate.swift in Sources */,
 				B7C8167B278DF1DF00E87DD4 /* FoodRecipe.xcdatamodeld in Sources */,
 				B7CC03C8277B031C00963F9C /* SideMenuVC.swift in Sources */,
+				B7375CD027973B92009C616F /* NSAttributedStringExtension.swift in Sources */,
 				B7C81676278DF06400E87DD4 /* Recipe + Extension.swift in Sources */,
 				B7C81687278E060C00E87DD4 /* UIViewController + UIAlertController.swift in Sources */,
 				B78C170D2762383B009F4973 /* SignUpVC.swift in Sources */,
-				B78C1711276544CF009F4973 /* OnboardingSlide.swift in Sources */,
 				B76E6DB52768AAC80076D074 /* SavedVC.swift in Sources */,
 				B770BB27278190C10000C630 /* RecipeDetailsVC.swift in Sources */,
-				B7CC03CE277B26D600963F9C /* ProfileVC.swift in Sources */,
+				B7CC03CE277B26D600963F9C /* AboutUsVC.swift in Sources */,
 				B7CC03CC277B04C900963F9C /* SideMenu.swift in Sources */,
 				B78C16E02761D500009F4973 /* SceneDelegate.swift in Sources */,
 			);

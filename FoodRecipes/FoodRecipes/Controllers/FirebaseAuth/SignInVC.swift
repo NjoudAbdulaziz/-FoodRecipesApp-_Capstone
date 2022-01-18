@@ -13,6 +13,7 @@ import SwiftMessages
 class SignInVC: UIViewController {
   
     //UIView Properties.....
+    @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var email: UITextField!
     @IBOutlet weak var password: UITextField!
     @IBOutlet weak var signInBtn: UIButton!
@@ -21,6 +22,8 @@ class SignInVC: UIViewController {
         super.viewDidLoad()
 
         signInBtn.layer.cornerRadius = signInBtn.layer.frame.height/2
+        //Background of The SignInVC Page
+        imageView.image = UIImage(named: "1")
 
     }
     // MARK: - Login Button

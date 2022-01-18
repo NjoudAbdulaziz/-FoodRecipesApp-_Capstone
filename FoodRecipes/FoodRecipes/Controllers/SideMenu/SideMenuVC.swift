@@ -26,7 +26,7 @@ class SideMenuVC: UIViewController {
         SideMenu(icon: UIImage(named: "searchIcon")!, title: "Search Recipes"),
         SideMenu(icon: UIImage(named: "saveIcon")!, title: "Saved Recipes"),
         SideMenu(icon: UIImage(named: "settings")!, title: "Settings"),
-        SideMenu(icon: UIImage(named: "menu")!, title: "Profile")
+        SideMenu(icon: UIImage(named: "aboutUsIcon")!, title: "About Us")
     ]
     
     

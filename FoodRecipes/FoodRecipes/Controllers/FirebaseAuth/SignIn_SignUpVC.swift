@@ -10,6 +10,7 @@ import UIKit
 class SignIn_SignUpVC: UIViewController {
 
     //UIView Properties...
+    @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var signInBtn: UIButton!
     @IBOutlet weak var dontHaveAccountLabel: UILabel!
     @IBOutlet weak var signUpBtn: UIButton!
@@ -18,6 +19,8 @@ class SignIn_SignUpVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         SetupProperties()
+        //Background of The SignIn_SignUpVC Page
+        imageView.image = UIImage(named: "1")
     }
     
     @IBAction func signInBtnClick(_ sender: Any) {

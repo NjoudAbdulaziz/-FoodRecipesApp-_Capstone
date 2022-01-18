@@ -149,7 +149,7 @@ extension MainVC : SideMenuVCDelegate {
             self.showViewController(viewController: UINavigationController.self , storyboardId: "SettingsNavID")
         case 3:
             //Profile page
-            self.showViewController(viewController: UINavigationController.self , storyboardId: "ProfileNavID")
+            self.showViewController(viewController: UINavigationController.self , storyboardId: "AboutUsVCNavID")
         default:
             break
         }
