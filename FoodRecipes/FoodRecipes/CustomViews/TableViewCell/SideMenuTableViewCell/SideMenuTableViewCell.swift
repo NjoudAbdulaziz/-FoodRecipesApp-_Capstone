@@ -18,15 +18,6 @@ class SideMenuTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-         //background
-        
-        
-        //Icon
-    
-        
-        //Title
-        
-        
     }
     
 }

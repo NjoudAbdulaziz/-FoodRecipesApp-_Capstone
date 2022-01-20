@@ -39,6 +39,7 @@ class MainVC: UIViewController {
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(TabGestureRecognizer))
         tapGestureRecognizer.numberOfTapsRequired = 1
         tapGestureRecognizer.delegate = self
+        tapGestureRecognizer.cancelsTouchesInView = false
         view.addGestureRecognizer(tapGestureRecognizer)
         if self.revealSideMenuOnTop{
             view.insertSubview(self.sideMenuShadowView, at: 1)
@@ -70,6 +71,7 @@ class MainVC: UIViewController {
         // Side Menu Gestures
         let panGestureRecognizer = UIPanGestureRecognizer(target: self, action: #selector(handlepanGesture))
         panGestureRecognizer.delegate = self
+        panGestureRecognizer.cancelsTouchesInView = false
         view.addGestureRecognizer(panGestureRecognizer)
         
         // Default Main View Controller
