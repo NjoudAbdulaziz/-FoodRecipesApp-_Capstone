@@ -141,17 +141,22 @@ extension MainVC : SideMenuVCDelegate {
     func selectedCell(_ row: Int) {
         switch row {
         case 0:
+            //Profile page
+            self.showViewController(viewController: UINavigationController.self , storyboardId: "HomeNavID")
+        case 1:
             //Search page
             self.showViewController(viewController: UINavigationController.self , storyboardId: "SearchNavID")
-        case 1:
+        case 2:
             //Saved page
             self.showViewController(viewController: UINavigationController.self , storyboardId: "SavedNavID")
-        case 2:
+        case 3:
             //Settings page
             self.showViewController(viewController: UINavigationController.self , storyboardId: "SettingsNavID")
-        case 3:
+        case 4:
             //Profile page
             self.showViewController(viewController: UINavigationController.self , storyboardId: "AboutUsVCNavID")
+            
+            
         default:
             break
         }

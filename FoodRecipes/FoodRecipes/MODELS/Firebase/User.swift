@@ -33,8 +33,4 @@ extension User {
         return newUser
     }
     
-    static func update(userName:String)-> [String:Any]{
-        let newUser = ["userName": userName] as [String:Any]
-        return newUser
-    }
 }

@@ -29,19 +29,5 @@ class UserApi {
                 completion(user)
             }
         }
-        
-    }
-    
-    static func updateUserInfo(currentUser : User,uid:String,userName:String) {
-        
-        var name = ""
-        
-        if userName == currentUser.userName {
-            name = currentUser.userName ?? ""
-        }else{
-            name = userName
-        }
-        let refUser = Firestore.firestore().collection("Users")
-        refUser.document(uid).setData(User.update(userName: name), merge: true)
     }
 }

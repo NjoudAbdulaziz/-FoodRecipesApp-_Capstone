@@ -8,10 +8,9 @@
 import Foundation
 import CoreData
 import UIKit
-//MARK:-A UIViewController extension to hold a global showErrorAlert dialog
 
+//MARK:-A UIViewController extension to hold a global showErrorAlert dialog
 extension UIViewController  {
-    
     
     //MARK:-showAlert Dialog
     /*
