@@ -23,7 +23,6 @@ class SideMenuVC: UIViewController {
     var defaultHighlightedCell: Int = 0
     
     var menu: [SideMenu] = [
-        SideMenu(icon: UIImage(named: "searchIcon")!, title: "Home"),
         SideMenu(icon: UIImage(named: "searchIcon")!, title: "Search Recipes"),
         SideMenu(icon: UIImage(named: "saveIcon")!, title: "Saved Recipes"),
         SideMenu(icon: UIImage(named: "settings")!, title: "Settings"),
@@ -44,7 +43,6 @@ class SideMenuVC: UIViewController {
             let defaultRow = IndexPath(row: self.defaultHighlightedCell, section:0)
             self.sideMenuTableView.selectRow(at: defaultRow, animated: false, scrollPosition: .none)
         }
-        // logOutBtn
         
         // Register TableView Cell
         self.sideMenuTableView.register(SideMenuTableViewCell.nib, forCellReuseIdentifier: SideMenuTableViewCell.identifire)

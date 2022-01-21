@@ -23,7 +23,7 @@ extension UIViewController  {
         present(alertVC, animated: true, completion: nil)
     }
     
-    //open  the external website like recipe source and youtube video
+    //Open The External Website like recipe source and youtube video
     func openExternalUrl(url:String) {
         if verifyUrl(urlString: url) {
             UIApplication.shared.open(URL(string: url)!, options: [:], completionHandler: nil)

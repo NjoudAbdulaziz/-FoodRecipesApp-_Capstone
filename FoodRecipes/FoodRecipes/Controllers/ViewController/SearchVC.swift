@@ -161,6 +161,7 @@ extension SearchVC: UITableViewDataSource, UITableViewDelegate{
         // Set the name and image
         cell.textLabel?.text = recipe.name
         cell.imageView?.image = UIImage(named: "img_placeholder")
+        cell.detailTextLabel?.text = "Hi"
         ApiClient.downloadThumbImage(path:  recipe.imageurl) { data, error in
             guard let data = data else { return }
             let image = UIImage(data: data)

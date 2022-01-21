@@ -163,7 +163,7 @@ class RecipeDetailsVC: UIViewController {
     
 }
 // -------------------------------------------------------------------------
-// MARK: ingredients Table View Data Source extention
+// MARK:  Table View Data Source extention
 extension RecipeDetailsVC: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -180,11 +180,6 @@ extension RecipeDetailsVC: UITableViewDataSource, UITableViewDelegate {
         
         return cell
     }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-    }
-    
     
 }
 
