@@ -21,6 +21,9 @@ class SignIn_SignUpVC: UIViewController {
         SetupProperties()
         //Background of The SignIn_SignUpVC Page
         imageView.image = UIImage(named: "1")
+        
+        // Start observing style change
+        startObserving(&UserInterfaceStyleManager.shared)
     }
     
     @IBAction func signInBtnClick(_ sender: Any) {

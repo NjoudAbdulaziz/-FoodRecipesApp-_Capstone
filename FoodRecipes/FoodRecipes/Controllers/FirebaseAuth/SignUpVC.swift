@@ -24,6 +24,9 @@ class SignUpVC: UIViewController {
         signUbBtn.layer.cornerRadius = signUbBtn.layer.frame.height/2
         //Background of The SignUpVC Page
         imageView.image = UIImage(named: "1")
+        
+        // Start observing style change
+        startObserving(&UserInterfaceStyleManager.shared)
 
       }
     

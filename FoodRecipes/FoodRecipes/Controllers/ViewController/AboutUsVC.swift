@@ -23,6 +23,9 @@ class AboutUsVC: UIViewController {
         imageView.image = UIImage(named: "1")
 
         updateTextView()
+        
+        // Start observing style change
+        startObserving(&UserInterfaceStyleManager.shared)
     }
     func updateTextView(){
         let path = "https://twitter.com/Njoud06880782"

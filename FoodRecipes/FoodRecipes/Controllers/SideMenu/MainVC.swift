@@ -29,6 +29,8 @@ class MainVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // Start observing style change
+        startObserving(&UserInterfaceStyleManager.shared)
         
         // Shadow Background View
         self.sideMenuShadowView = UIView(frame: self.view.bounds)

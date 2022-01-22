@@ -24,6 +24,9 @@ class SignInVC: UIViewController {
         signInBtn.layer.cornerRadius = signInBtn.layer.frame.height/2
         //Background of The SignInVC Page
         imageView.image = UIImage(named: "1")
+        
+        // Start observing style change
+        startObserving(&UserInterfaceStyleManager.shared)
 
     }
     // MARK: - Login Button

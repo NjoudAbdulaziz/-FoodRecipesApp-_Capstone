@@ -36,6 +36,10 @@ class RecipeDetailsVC: UIViewController {
         super.viewDidLoad()
         selectedSegmented.setTitleTextAttributes(titleTextAttributes, for: .normal)
         selectedSegmented.setTitleTextAttributes(selectedtitleTextAttributes, for: .selected)
+        
+        // Start observing style change
+        startObserving(&UserInterfaceStyleManager.shared)
+        
         savedButton.setTitle("Saved", for: UIControl.State.selected)
         tabelView.dataSource = self
         tabelView.delegate = self
@@ -172,7 +176,7 @@ extension RecipeDetailsVC: UITableViewDataSource, UITableViewDelegate {
     
     //formart cell table
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: kIngredientsCell)!
+        let cell = tableView.dequeueReusableCell(withIdentifier: "IngredientsCell")!
         let strIngredient2 = self.ingredients[(indexPath as NSIndexPath).row]
         // Set the name and image
         cell.textLabel?.text = strIngredient2.name

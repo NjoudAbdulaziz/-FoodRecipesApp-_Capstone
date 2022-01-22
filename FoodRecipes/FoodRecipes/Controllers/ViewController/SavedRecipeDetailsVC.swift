@@ -1,5 +1,5 @@
 //
-//  ListOfRecipesVC.swift
+//  SavedRecipeDetailsVC.swift
 //  FoodRecipes
 //
 //  Created by Njoud Alrshidi on 26/05/1443 AH.
@@ -46,6 +46,9 @@ class SavedRecipeDetailsVC : UIViewController {
         selectedSegment.setTitleTextAttributes(selectedtitleTextAttributes, for: .selected)
         populateRecipe(recipe: selectedRecipe)
         setUpFetchedResultsController()
+        
+        // Start observing style change
+        startObserving(&UserInterfaceStyleManager.shared)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -140,7 +143,7 @@ extension SavedRecipeDetailsVC:UITableViewDataSource, UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let aRecipe = fetchedResultsController.object(at: indexPath)
-        let cell = tableView.dequeueReusableCell(withIdentifier: kIngredientsCell)!
+        let cell = tableView.dequeueReusableCell(withIdentifier: "IngredientsCell")!
         // Set the name and image
         cell.textLabel?.text = aRecipe.name
         cell.detailTextLabel?.text = aRecipe.quantity

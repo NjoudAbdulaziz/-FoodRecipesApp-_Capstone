@@ -1,5 +1,5 @@
 //
-//  RecipeVC.swift
+//  SearchVC.swift
 //  FoodRecipes
 //
 //  Created by Njoud Alrshidi on 10/05/1443 AH.
@@ -27,11 +27,13 @@ class SearchVC: UIViewController {
       sideMenuBtn.target = revealViewController()
       sideMenuBtn.action = #selector(revealViewController()?.revealSideMenu)
         
+        // Start observing style change
+        startObserving(&UserInterfaceStyleManager.shared)
+        
         tableView.dataSource = self
         tableView.delegate = self
         //set Title
         pickerViewController.delegate = self
-        self.navigationItem.title = kSearchTitle
         loadList(selectedSegmentIndex: selectedSegment.selectedSegmentIndex)
         selectedSegment.setTitleTextAttributes(titleTextAttributes, for: .normal)
         selectedSegment.setTitleTextAttributes(selectedtitleTextAttributes, for: .selected)
@@ -85,7 +87,7 @@ class SearchVC: UIViewController {
                 self.recipeList = recipeList
                 self.tableView.reloadData()
             }else {
-                self.showAlertDialog(title: kFailedtoLoadErrorTitle, message: error?.localizedDescription ?? kfailedErrorMesg)
+                self.showAlertDialog(title: "Loading Error", message: error?.localizedDescription ?? "Failed to load data")
             }
         })
     }
@@ -100,7 +102,7 @@ class SearchVC: UIViewController {
                     self.catList = catList
                     self.pickerViewController.reloadAllComponents()
                 }else {
-                    self.showAlertDialog(title: kFailedtoLoadErrorTitle, message: error?.localizedDescription ?? kfailedErrorMesg)
+                    self.showAlertDialog(title: "Loading Error", message: error?.localizedDescription ?? "Failed to load data")
                 }
             }
         }else if selectedSegmentIndex == 1 {
@@ -110,7 +112,7 @@ class SearchVC: UIViewController {
                     self.catList = arealist
                     self.pickerViewController.reloadAllComponents()
                 }else {
-                    self.showAlertDialog(title: kFailedtoLoadErrorTitle, message: error?.localizedDescription ?? kfailedErrorMesg)
+                    self.showAlertDialog(title: "Loading Error", message: error?.localizedDescription ?? "Failed to load data")
                 }
             }
         }
@@ -156,12 +158,12 @@ extension SearchVC: UITableViewDataSource, UITableViewDelegate{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: kSearchRecipeCell)!
+        let cell = tableView.dequeueReusableCell(withIdentifier: "searchRecipeCell")!
         let recipe = self.recipeList[(indexPath as NSIndexPath).row]
         // Set the name and image
         cell.textLabel?.text = recipe.name
         cell.imageView?.image = UIImage(named: "img_placeholder")
-        cell.detailTextLabel?.text = "Hi"
+        //cell.detailTextLabel?.text = "Hi"
         ApiClient.downloadThumbImage(path:  recipe.imageurl) { data, error in
             guard let data = data else { return }
             let image = UIImage(data: data)
@@ -176,7 +178,7 @@ extension SearchVC: UITableViewDataSource, UITableViewDelegate{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("I am here")
         let shortRecipe = self.recipeList[(indexPath as NSIndexPath).row]
-        performSegue(withIdentifier: kRecipeSegue, sender: shortRecipe)
+        performSegue(withIdentifier: "recipeSegue", sender: shortRecipe)
         tableView.deselectRow(at: indexPath, animated: true)
     }
     

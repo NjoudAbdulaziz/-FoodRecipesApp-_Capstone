@@ -18,6 +18,7 @@ class SideMenuVC: UIViewController {
 
     @IBOutlet weak var sideMenuTableView: UITableView!
     
+    @IBOutlet weak var sideMenuImageBackground: UIImageView!
     //declare the delegate
     var delegate: SideMenuVCDelegate?
     var defaultHighlightedCell: Int = 0
@@ -38,11 +39,18 @@ class SideMenuVC: UIViewController {
         self.sideMenuTableView.dataSource = self
         self.sideMenuTableView.separatorStyle = .none
         
+        
+        // Start observing style change
+         startObserving(&UserInterfaceStyleManager.shared)
+
+        //Background of The SideMenu
+        sideMenuImageBackground.image = UIImage(named: "1")
+
         // Set Highlighted Cell
         DispatchQueue.main.async {
             let defaultRow = IndexPath(row: self.defaultHighlightedCell, section:0)
             self.sideMenuTableView.selectRow(at: defaultRow, animated: false, scrollPosition: .none)
-        }
+    }
         
         // Register TableView Cell
         self.sideMenuTableView.register(SideMenuTableViewCell.nib, forCellReuseIdentifier: SideMenuTableViewCell.identifire)

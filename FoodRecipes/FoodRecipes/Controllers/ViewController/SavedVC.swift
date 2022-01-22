@@ -1,5 +1,5 @@
 //
-//  RecipesVC.swift
+//  SavedVC.swift
 //  FoodRecipes
 //
 //  Created by Njoud Alrshidi on 10/05/1443 AH.
@@ -19,9 +19,11 @@ class SavedVC: UIViewController {
         sideMenuBtn.target = revealViewController()
         sideMenuBtn.action = #selector(revealViewController()?.revealSideMenu)
         
+        // Start observing style change
+        startObserving(&UserInterfaceStyleManager.shared)
+        
         tableView.dataSource = self
         tableView.delegate = self
-        self.navigationItem.title = kfouariteTitle
         navigationItem.rightBarButtonItem = editButtonItem
         setUpFetchedResultsController()
     }
@@ -91,7 +93,7 @@ override func setEditing(_ editing: Bool, animated: Bool) {
 override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     // Get the new view controller using segue.destination.
     // Pass the selected object to the new view controller.
-    if segue.identifier == kNavTosavedRecipeSegue {
+    if segue.identifier == "savedRecipeSegue" {
         let detailVC = segue.destination as! SavedRecipeDetailsVC
         detailVC.recipe = sender as? Recipe
     }
@@ -122,7 +124,7 @@ func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> 
 
 func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let aRecipe = fetchedResultsController.object(at: indexPath)
-    let cell = tableView.dequeueReusableCell(withIdentifier: kSavedRecipeCell, for: indexPath)
+    let cell = tableView.dequeueReusableCell(withIdentifier: "savedRecipeCell", for: indexPath)
     guard aRecipe.imageThumbData != nil else {
         cell.imageView?.image = #imageLiteral(resourceName: "img_placeholder")
         return cell
@@ -144,7 +146,7 @@ func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.Ed
 
 func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     let recipe = fetchedResultsController.object(at: indexPath)
-    performSegue(withIdentifier:kNavTosavedRecipeSegue, sender: recipe)
+    performSegue(withIdentifier:"savedRecipeSegue", sender: recipe)
     tableView.deselectRow(at: indexPath, animated: true)
 }
 

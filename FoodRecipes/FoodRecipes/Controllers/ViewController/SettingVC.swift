@@ -14,17 +14,15 @@ import FirebaseFirestore
 class SettingsVC: UIViewController {
     
     //IBOutlet
-    
     @IBOutlet weak var sideMenuBtn: UIBarButtonItem!
-    
     @IBOutlet weak var signOutBtn: UIButton!
     @IBOutlet weak var userEmailLbl: UILabel!
     @IBOutlet weak var userName: UILabel!
     @IBOutlet weak var profileImageView: UIImageView!
     @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var innerFrame: UIImageView!
-    
-    var user : User?
+    @IBOutlet weak var switchBackgroundView: UIView!
+    @IBOutlet weak var darkModeSwitch: UISwitch!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +30,13 @@ class SettingsVC: UIViewController {
         sideMenuBtn.target = revealViewController()
         sideMenuBtn.action = #selector(revealViewController()?.revealSideMenu)
         
+        // Set switch status
+        darkModeSwitch.isOn = UserInterfaceStyleManager.shared.currentStyle == .dark
+        // Start observing style change
+        startObserving(&UserInterfaceStyleManager.shared)
+  
+        
+        //get user information from fireStor and put it into user Profaile
         UserApi.getUser(uid: Auth.auth().currentUser?.uid ?? "") { user in
             self.userName.text = user.userName
             self.userEmailLbl.text = user.email
@@ -41,15 +46,15 @@ class SettingsVC: UIViewController {
     override func viewDidLayoutSubviews() {
         
         super.viewDidLayoutSubviews()
-     //   view.addSubview(indicatorView)
-        signOutBtn.layer.masksToBounds = true
-      //  signOutBtn.titleLabel?.font = UIFont.robotoBold(size: 20)
-      //  signOutBtn.applyGradient(isVertical: false, colorArray: [.orange1Color, .orange2Color])
         
+        signOutBtn.layer.masksToBounds = true
         signOutBtn.titleLabel?.font = UIFont.systemFont(ofSize: 20)
-        signOutBtn.tintColor = .white
         signOutBtn.layer.cornerRadius = 25
         signOutBtn.layer.cornerCurve = .continuous
+        
+        switchBackgroundView.layer.masksToBounds = true
+        switchBackgroundView.layer.cornerRadius = 25
+        switchBackgroundView.layer.cornerCurve = .continuous
 
         containerView.layer.cornerRadius = 25
         containerView.backgroundColor = .white
@@ -60,25 +65,19 @@ class SettingsVC: UIViewController {
 
         innerFrame.clipsToBounds = true
         innerFrame.layer.cornerRadius = 25
-//        innerFrame.applyGradient(isVertical: true, colorArray: [.orange1Color, .orange2Color])
+
     }
     
-//    @IBAction func clickSwitch(_ sender: UISwitch) {
-//
-//            if #available(iOS 15.0, *) {
-//                let appDelegate = UIApplication.shared.windows.first
-//
-//                if sender.isOn {
-//                    appDelegate?.overrideUserInterfaceStyle = .dark
-//                    return
-//                }
-//                appDelegate?.overrideUserInterfaceStyle = .light
-//                return
-//            }else{
-//
-//            }
-//
-//    }
+    @IBAction func clickSwitch(_ sender: UISwitch) {
+        
+        let darkModeOn = sender.isOn
+        // Store in UserDefaults
+        UserDefaults.standard.set(darkModeOn, forKey: UserInterfaceStyleManager.userInterfaceStyleDarkModeOn)
+        
+        // Update interface style
+        UserInterfaceStyleManager.shared.updateUserInterfaceStyle(darkModeOn)
+
+    }
 
     
     @IBAction func signOutBtn(_ sender: UIButton) {

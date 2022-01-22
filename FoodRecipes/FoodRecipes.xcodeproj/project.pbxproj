@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		B704F274278F505600314F8F /* SwiftMessages in Frameworks */ = {isa = PBXBuildFile; productRef = B704F273278F505600314F8F /* SwiftMessages */; };
+		B7275A0F279C29590041DCAB /* UserInterfaceStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7275A0E279C29590041DCAB /* UserInterfaceStyle.swift */; };
 		B7375CD027973B92009C616F /* NSAttributedStringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7375CCF27973B92009C616F /* NSAttributedStringExtension.swift */; };
-		B7375D1C27996865009C616F /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7375D1B27996865009C616F /* HomeVC.swift */; };
 		B73E8B122765EA8B00AACC31 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73E8B112765EA8B00AACC31 /* SignInVC.swift */; };
 		B73E8B142765EDEB00AACC31 /* SignIn_SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73E8B132765EDEB00AACC31 /* SignIn_SignUpVC.swift */; };
 		B76E6D93276605680076D074 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B76E6D92276605680076D074 /* GoogleService-Info.plist */; };
@@ -33,7 +33,6 @@
 		B7C8167E278DF4CC00E87DD4 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C8167D278DF4CC00E87DD4 /* ApiClient.swift */; };
 		B7C81680278DF50400E87DD4 /* CategoriesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C8167F278DF50400E87DD4 /* CategoriesList.swift */; };
 		B7C81682278DF53F00E87DD4 /* RecipeListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C81681278DF53F00E87DD4 /* RecipeListResponse.swift */; };
-		B7C81684278DF57600E87DD4 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C81683278DF57600E87DD4 /* AppConstants.swift */; };
 		B7C81687278E060C00E87DD4 /* UIViewController + UIAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C81686278E060C00E87DD4 /* UIViewController + UIAlertController.swift */; };
 		B7CC03C8277B031C00963F9C /* SideMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CC03C7277B031C00963F9C /* SideMenuVC.swift */; };
 		B7CC03CA277B034F00963F9C /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CC03C9277B034F00963F9C /* MainVC.swift */; };
@@ -46,8 +45,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B7275A0E279C29590041DCAB /* UserInterfaceStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInterfaceStyle.swift; sourceTree = "<group>"; };
 		B7375CCF27973B92009C616F /* NSAttributedStringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSAttributedStringExtension.swift; sourceTree = "<group>"; };
-		B7375D1B27996865009C616F /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		B73E8B112765EA8B00AACC31 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		B73E8B132765EDEB00AACC31 /* SignIn_SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignIn_SignUpVC.swift; sourceTree = "<group>"; };
 		B76E6D92276605680076D074 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -70,7 +69,6 @@
 		B7C8167D278DF4CC00E87DD4 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 		B7C8167F278DF50400E87DD4 /* CategoriesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesList.swift; sourceTree = "<group>"; };
 		B7C81681278DF53F00E87DD4 /* RecipeListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListResponse.swift; sourceTree = "<group>"; };
-		B7C81683278DF57600E87DD4 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
 		B7C81686278E060C00E87DD4 /* UIViewController + UIAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + UIAlertController.swift"; sourceTree = "<group>"; };
 		B7CC03C7277B031C00963F9C /* SideMenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuVC.swift; sourceTree = "<group>"; };
 		B7CC03C9277B034F00963F9C /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
@@ -163,7 +161,7 @@
 				B7C8167C278DF48E00E87DD4 /* Networking */,
 				B7916DE82794A9A90024D2DA /* Firebase */,
 				B7CC03CB277B04C800963F9C /* SideMenu.swift */,
-				B7C81683278DF57600E87DD4 /* AppConstants.swift */,
+				B7275A0E279C29590041DCAB /* UserInterfaceStyle.swift */,
 			);
 			path = MODELS;
 			sourceTree = "<group>";
@@ -215,7 +213,6 @@
 				B7CC03DA277D168700963F9C /* SavedRecipeDetailsVC.swift */,
 				B7CC03CD277B26D600963F9C /* AboutUsVC.swift */,
 				B7EC69082783173E00F72646 /* SettingVC.swift */,
-				B7375D1B27996865009C616F /* HomeVC.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -351,8 +348,6 @@
 				B73E8B142765EDEB00AACC31 /* SignIn_SignUpVC.swift in Sources */,
 				B7EC69092783173E00F72646 /* SettingVC.swift in Sources */,
 				B7C8167E278DF4CC00E87DD4 /* ApiClient.swift in Sources */,
-				B7375D1C27996865009C616F /* HomeVC.swift in Sources */,
-				B7C81684278DF57600E87DD4 /* AppConstants.swift in Sources */,
 				B78C16FD2762129A009F4973 /* User.swift in Sources */,
 				B7CC03CA277B034F00963F9C /* MainVC.swift in Sources */,
 				B7C81680278DF50400E87DD4 /* CategoriesList.swift in Sources */,
@@ -363,6 +358,7 @@
 				B78C17002762174B009F4973 /* UserApi.swift in Sources */,
 				B7C81682278DF53F00E87DD4 /* RecipeListResponse.swift in Sources */,
 				B7C81678278DF11D00E87DD4 /* DataController.swift in Sources */,
+				B7275A0F279C29590041DCAB /* UserInterfaceStyle.swift in Sources */,
 				B78C16DE2761D500009F4973 /* AppDelegate.swift in Sources */,
 				B7C8167B278DF1DF00E87DD4 /* FoodRecipe.xcdatamodeld in Sources */,
 				B7CC03C8277B031C00963F9C /* SideMenuVC.swift in Sources */,
