@@ -109,7 +109,7 @@
         <!--Sign InVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="SignInVC" customModule="FoodRecipes" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignInVC" modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="SignInVC" customModule="FoodRecipes" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -234,13 +234,14 @@
         <!--MainVC-->
         <scene sceneID="sNy-Y5-PcJ">
             <objects>
-                <viewController storyboardIdentifier="main" id="H3Z-Sd-N32" customClass="MainVC" customModule="FoodRecipes" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="main" useStoryboardIdentifierAsRestorationIdentifier="YES" id="H3Z-Sd-N32" customClass="MainVC" customModule="FoodRecipes" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lDe-c7-mpY">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="xBO-ZZ-XlL"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="eLk-7h-IYx"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PPc-wa-gUZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1011,7 +1012,7 @@
                                                     <color key="titleColor" red="0.93333333330000001" green="0.43529411759999997" blue="0.3411764706" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="savedButtonPressed:" destination="nwv-XL-PN6" eventType="touchUpInside" id="NTe-2V-xOi"/>
+                                                    <action selector="SavedButtonPressed:" destination="nwv-XL-PN6" eventType="touchUpInside" id="nXP-IK-OQE"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dc5-Sc-jCV">
@@ -1145,7 +1146,7 @@
                         <outlet property="recipeBannerImageView" destination="zO4-SN-Jke" id="k5O-pY-jqN"/>
                         <outlet property="recipeInstrusctionsTextView" destination="9Rc-JQ-5XW" id="LOf-R4-EmM"/>
                         <outlet property="recipeTitleLabel" destination="iFa-4D-4xU" id="LTl-D6-h0b"/>
-                        <outlet property="saveButton" destination="cJs-Yb-mJ3" id="xXm-17-fJh"/>
+                        <outlet property="savedButton" destination="cJs-Yb-mJ3" id="yGM-yd-pp5"/>
                         <outlet property="selectedSegment" destination="At4-Ib-9mj" id="gJ7-bg-Z8Y"/>
                         <outlet property="tableView" destination="tfg-YN-1di" id="JhX-YK-ScO"/>
                         <outlet property="webButton" destination="wN3-Bg-dNn" id="Gsm-42-pk3"/>

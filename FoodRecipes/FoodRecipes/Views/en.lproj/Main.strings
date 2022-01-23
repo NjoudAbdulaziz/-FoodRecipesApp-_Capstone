@@ -1,0 +1,192 @@
+
+/* Class = "UILabel"; text = "FoodRecipes"; ObjectID = "2Rn-Cp-zc6"; */
+"2Rn-Cp-zc6.text" = "FoodRecipes";
+
+/* Class = "UILabel"; text = "User Name*"; ObjectID = "2cg-9n-60R"; */
+"2cg-9n-60R.text" = "User Name*";
+
+/* Class = "UIButton"; normalTitle = "Youtube"; ObjectID = "4JY-1x-fxg"; */
+"4JY-1x-fxg.normalTitle" = "Youtube";
+
+/* Class = "UITextField"; placeholder = "Enter Your Name.."; ObjectID = "5uw-ra-tkk"; */
+"5uw-ra-tkk.placeholder" = "Enter Your Name..";
+
+/* Class = "UILabel"; text = "FoodRecipes"; ObjectID = "721-lo-AUL"; */
+"721-lo-AUL.text" = "FoodRecipes";
+
+/* Class = "UINavigationItem"; title = "About Us"; ObjectID = "7FJ-hK-y2Z"; */
+"7FJ-hK-y2Z.title" = "About Us";
+
+/* Class = "UITextView"; text = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda."; ObjectID = "9Rc-JQ-5XW"; */
+"9Rc-JQ-5XW.text" = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.";
+
+/* Class = "UINavigationItem"; title = "Saved Recipes"; ObjectID = "AEA-7u-YO1"; */
+"AEA-7u-YO1.title" = "Saved Recipes";
+
+/* Class = "UILabel"; text = "Create New Account :"; ObjectID = "Aek-Ms-uRa"; */
+"Aek-Ms-uRa.text" = "Create New Account :";
+
+/* Class = "UISegmentedControl"; At4-Ib-9mj.segmentTitles[0] = "Ingredients"; ObjectID = "At4-Ib-9mj"; */
+"At4-Ib-9mj.segmentTitles[0]" = "Ingredients";
+
+/* Class = "UISegmentedControl"; At4-Ib-9mj.segmentTitles[1] = "Instructions"; ObjectID = "At4-Ib-9mj"; */
+"At4-Ib-9mj.segmentTitles[1]" = "Instructions";
+
+/* Class = "UILabel"; text = "Email ID*"; ObjectID = "B1j-Ed-E9z"; */
+"B1j-Ed-E9z.text" = "Email ID*";
+
+/* Class = "UIButton"; configuration.title = "LogOut"; ObjectID = "C3f-7M-Jfz"; */
+"C3f-7M-Jfz.configuration.title" = "LogOut";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "C3f-7M-Jfz"; */
+"C3f-7M-Jfz.normalTitle" = "Button";
+
+/* Class = "UITextView"; text = "Connect with us via Twitter"; ObjectID = "C6C-9M-iNd"; */
+"C6C-9M-iNd.text" = "Connect with us via Twitter";
+
+/* Class = "UINavigationItem"; title = "Settings"; ObjectID = "Clh-YR-v7C"; */
+"Clh-YR-v7C.title" = "Settings";
+
+/* Class = "UIButton"; normalTitle = "youtube"; ObjectID = "Dc5-Sc-jCV"; */
+"Dc5-Sc-jCV.normalTitle" = "youtube";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "FQ2-an-YVH"; */
+"FQ2-an-YVH.text" = "Title";
+
+/* Class = "UILabel"; text = "Email:"; ObjectID = "Fhc-Iq-6BC"; */
+"Fhc-Iq-6BC.text" = "Email:";
+
+/* Class = "UILabel"; text = "Detail"; ObjectID = "FlE-Nf-EhS"; */
+"FlE-Nf-EhS.text" = "Detail";
+
+/* Class = "UITextField"; placeholder = "Enter Your Password"; ObjectID = "Fpu-tU-hd2"; */
+"Fpu-tU-hd2.placeholder" = "Enter Your Password";
+
+/* Class = "UILabel"; text = " FoodRecipes"; ObjectID = "Gy9-E5-we8"; */
+"Gy9-E5-we8.text" = " FoodRecipes";
+
+/* Class = "UIButton"; normalTitle = "Save"; ObjectID = "HGv-ad-54N"; */
+"HGv-ad-54N.normalTitle" = "Save";
+
+/* Class = "UILabel"; text = "Sign into your Account :"; ObjectID = "HOl-AW-44a"; */
+"HOl-AW-44a.text" = "Sign into your Account :";
+
+/* Class = "UILabel"; text = "Username:"; ObjectID = "NCj-OQ-WQv"; */
+"NCj-OQ-WQv.text" = "Username:";
+
+/* Class = "UILabel"; text = "Email"; ObjectID = "PwM-gJ-Zep"; */
+"PwM-gJ-Zep.text" = "Email";
+
+/* Class = "UILabel"; text = "Password*"; ObjectID = "RKY-hI-eNv"; */
+"RKY-hI-eNv.text" = "Password*";
+
+/* Class = "UITextField"; placeholder = "Enter your Passworde Here"; ObjectID = "SSe-LG-p0u"; */
+"SSe-LG-p0u.placeholder" = "Enter your Passworde Here";
+
+/* Class = "UITextField"; text = "123456"; ObjectID = "SSe-LG-p0u"; */
+"SSe-LG-p0u.text" = "123456";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "SYO-Es-RM6"; */
+"SYO-Es-RM6.text" = "Title";
+
+/* Class = "UILabel"; text = "FoodRecipes"; ObjectID = "UdK-MP-I74"; */
+"UdK-MP-I74.text" = "FoodRecipes";
+
+/* Class = "UISegmentedControl"; Vd0-NI-vbk.segmentTitles[0] = "Main Categories"; ObjectID = "Vd0-NI-vbk"; */
+"Vd0-NI-vbk.segmentTitles[0]" = "Main Categories";
+
+/* Class = "UISegmentedControl"; Vd0-NI-vbk.segmentTitles[1] = "Country Area"; ObjectID = "Vd0-NI-vbk"; */
+"Vd0-NI-vbk.segmentTitles[1]" = "Country Area";
+
+/* Class = "UIButton"; configuration.title = "Create"; ObjectID = "ZZ6-Ha-9bf"; */
+"ZZ6-Ha-9bf.configuration.title" = "Create";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "ZZ6-Ha-9bf"; */
+"ZZ6-Ha-9bf.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "aCp-J3-EzK"; */
+"aCp-J3-EzK.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Save"; ObjectID = "cJs-Yb-mJ3"; */
+"cJs-Yb-mJ3.normalTitle" = "Save";
+
+/* Class = "UILabel"; text = "Password*"; ObjectID = "eKQ-tu-Bjw"; */
+"eKQ-tu-Bjw.text" = "Password*";
+
+/* Class = "UILabel"; text = "Detail"; ObjectID = "f2F-PB-D4j"; */
+"f2F-PB-D4j.text" = "Detail";
+
+/* Class = "UILabel"; text = "Make everyday cooking fun"; ObjectID = "ffT-66-MVk"; */
+"ffT-66-MVk.text" = "Make everyday cooking fun";
+
+/* Class = "UILabel"; text = "Detail"; ObjectID = "gBo-WJ-RrJ"; */
+"gBo-WJ-RrJ.text" = "Detail";
+
+/* Class = "UITextField"; placeholder = "Enter your Email Here"; ObjectID = "hsC-ER-eZS"; */
+"hsC-ER-eZS.placeholder" = "Enter your Email Here";
+
+/* Class = "UITextField"; text = "123eeww@gg.com"; ObjectID = "hsC-ER-eZS"; */
+"hsC-ER-eZS.text" = "123eeww@gg.com";
+
+/* Class = "UIButton"; normalTitle = "web"; ObjectID = "i8w-iy-rsa"; */
+"i8w-iy-rsa.normalTitle" = "web";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "iFa-4D-4xU"; */
+"iFa-4D-4xU.text" = "Label";
+
+/* Class = "UINavigationItem"; title = "Search For Recipes"; ObjectID = "iWh-Kt-ApO"; */
+"iWh-Kt-ApO.title" = "Search For Recipes";
+
+/* Class = "UILabel"; text = "User Name"; ObjectID = "iyl-IR-grQ"; */
+"iyl-IR-grQ.text" = "User Name";
+
+/* Class = "UITextView"; text = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda."; ObjectID = "m9J-h8-5BC"; */
+"m9J-h8-5BC.text" = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.";
+
+/* Class = "UILabel"; text = "Email ID*"; ObjectID = "mnx-Ft-UBy"; */
+"mnx-Ft-UBy.text" = "Email ID*";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "o81-CM-P3e"; */
+"o81-CM-P3e.text" = "Title";
+
+/* Class = "UITextField"; placeholder = "Enter Your Email"; ObjectID = "oQQ-3L-fEB"; */
+"oQQ-3L-fEB.placeholder" = "Enter Your Email";
+
+/* Class = "UIButton"; configuration.title = "Sign up"; ObjectID = "pMj-74-I8h"; */
+"pMj-74-I8h.configuration.title" = "Sign up";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "pMj-74-I8h"; */
+"pMj-74-I8h.normalTitle" = "Button";
+
+/* Class = "UISegmentedControl"; qd9-f6-UUg.segmentTitles[0] = "Ingredients"; ObjectID = "qd9-f6-UUg"; */
+"qd9-f6-UUg.segmentTitles[0]" = "Ingredients";
+
+/* Class = "UISegmentedControl"; qd9-f6-UUg.segmentTitles[1] = "Instructions"; ObjectID = "qd9-f6-UUg"; */
+"qd9-f6-UUg.segmentTitles[1]" = "Instructions";
+
+/* Class = "UIButton"; configuration.title = "sign in"; ObjectID = "rrR-p6-wMh"; */
+"rrR-p6-wMh.configuration.title" = "sign in";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "rrR-p6-wMh"; */
+"rrR-p6-wMh.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "web"; ObjectID = "wN3-Bg-dNn"; */
+"wN3-Bg-dNn.normalTitle" = "web";
+
+/* Class = "UIButton"; configuration.title = "Sign in"; ObjectID = "wpw-Ep-PxX"; */
+"wpw-Ep-PxX.configuration.title" = "Sign in";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "wpw-Ep-PxX"; */
+"wpw-Ep-PxX.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "xAi-dS-RaK"; */
+"xAi-dS-RaK.text" = "Title";
+
+/* Class = "UILabel"; text = "Dark Mode"; ObjectID = "xz5-la-3RC"; */
+"xz5-la-3RC.text" = "Dark Mode";
+
+/* Class = "UILabel"; text = " FoodRecipes"; ObjectID = "zdN-28-IPl"; */
+"zdN-28-IPl.text" = " FoodRecipes";
+
+/* Class = "UILabel"; text = "Don't have an account ?"; ObjectID = "zdp-aQ-b3w"; */
+"zdp-aQ-b3w.text" = "Don't have an account ?";

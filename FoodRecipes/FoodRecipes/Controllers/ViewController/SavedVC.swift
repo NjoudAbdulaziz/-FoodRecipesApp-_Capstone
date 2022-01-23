@@ -113,7 +113,7 @@ func numberOfSections(in tableView: UITableView) -> Int {
 func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     let  count = fetchedResultsController.sections?[section].numberOfObjects ?? 0
     if count == 0 {
-        tableView.setEmptyView(title: "You don't have any saved Recipes", message: "Your saved Recipes will appear here.", messageImage: #imageLiteral(resourceName: "heart_filled"))
+        tableView.setEmptyView(title: "You don't have any saved Recipes".localized, message: "Your saved Recipes will appear here.".localized, messageImage: #imageLiteral(resourceName: "heart_filled"))
     }
     else {
         tableView.restore()
@@ -121,7 +121,7 @@ func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> 
     
     return count
 }
-
+/////-------------------------اتلكددد
 func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let aRecipe = fetchedResultsController.object(at: indexPath)
     let cell = tableView.dequeueReusableCell(withIdentifier: "savedRecipeCell", for: indexPath)

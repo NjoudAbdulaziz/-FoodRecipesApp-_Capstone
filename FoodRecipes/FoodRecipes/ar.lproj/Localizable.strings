@@ -1,0 +1,100 @@
+/* 
+  Localizable.strings
+  FoodRecipes
+
+  Created by Njoud Alrshidi on 19/06/1443 AH.
+  
+*/
+
+/*
+ 
+ //showAlertDialog
+ 
+ //searchVC
+ 
+*/
+
+"Ok" = "تم";
+"Loading Error" = "خطأ في التحميل";
+"Failed to load data" = "فشل تحميل البيانات";
+"Loading Error" = "خطأ في التحميل";
+"Failed to load data" = "فشل تحميل البيانات";
+"Loading Error" = "خطأ في التحميل";
+"Failed to load data" = "فشل تحميل البيانات";
+
+//-----------------------------------------------------------
+/*
+  
+ //SvedVC
+ 
+*/
+
+"You don't have any saved Recipes" = "ليس لديك أي وصفات محفوظة";
+"Your saved Recipes will appear here." = "ستظهر هنا الوصفات المحفوظة.";
+
+//-----------------------------------------------------------
+/*
+  
+ //RecipeDetailsVC
+ 
+*/
+
+
+"Saved" = "تم الحفظ";
+"Recipe web link seems to be invalid" = "يبدو أن رابط الويب غير صالح";
+"Recipe youtube links is invalid" = "يبدو أن رابط اليوتيوب غير صالح";
+"Recipe is already saved" = "تم حفظ الوصفة بالفعل";
+
+//-----------------------------------------------------------
+/*
+  
+ //SavedRecipeDetailsVC
+ 
+*/
+
+"Saved" = "تم الحفظ";
+"Recipe web link seems to be invalid" = "يبدو أن رابط الويب غير صالح";
+"Recipe youtube links is invalid" =  "يبدو أن رابط اليوتيوب غير صالح";
+"Recipe is already in Saved" = "تم حفظ الوصفة بالفعل";
+
+//-----------------------------------------------------------
+/*
+  
+ //AboutUsVC
+ 
+*/
+
+"Twitter" = "تويتر";
+
+//-----------------------------------------------------------
+/*
+  
+ //SignInVC
+ 
+*/
+
+"Please fill Email and Password !" = "يرجى ملء خانه البريد الإلكتروني وكلمة المرور!";
+"Sorry, Couldn't find your Account!" = "عذرا ، لا يمكن العثور على حسابك!";
+
+//-----------------------------------------------------------
+/*
+  
+ //SignUpVC
+ 
+*/
+
+"Please fill Name , Email and Password Fields !" = "يرجى ملء خانه الاسم والبريد الإلكتروني وكلمة المرور!";
+"Email address is alreaady use by another account!" = "عنوان البريد الإلكتروني يستخدمه حساب آخر!";
+
+
+//-----------------------------------------------------------
+/*
+  
+ //SideMenuVC
+ 
+*/
+"Search Recipes" = "البحث عن الوصفات";
+"Saved Recipes" = "الوصفات المحفوظة";
+"Settings" = "الإعدادات";
+"About Us" = "نبذه عنا";
+

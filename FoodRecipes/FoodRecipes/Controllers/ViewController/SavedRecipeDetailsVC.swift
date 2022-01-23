@@ -7,6 +7,7 @@
 
 import UIKit
 import CoreData
+import SwiftMessages
 
 class SavedRecipeDetailsVC : UIViewController {
     
@@ -14,7 +15,7 @@ class SavedRecipeDetailsVC : UIViewController {
     @IBOutlet weak var recipeBannerImageView: UIImageView!
     @IBOutlet weak var recipeTitleLabel: UILabel!
     @IBOutlet weak var youtubeButton: UIButton!
-    @IBOutlet weak var saveButton: UIButton!
+    @IBOutlet weak var savedButton: UIButton!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var webButton: UIButton!
     @IBOutlet weak var selectedSegment: UISegmentedControl!
@@ -32,12 +33,12 @@ class SavedRecipeDetailsVC : UIViewController {
         guard let selectedRecipe = recipe else {
           return
         }
-        saveButton.setTitle("Saved", for: UIControl.State.selected)
+        savedButton.setTitle("Saved".localized, for: UIControl.State.selected)
         if #available(iOS 13.0, *) {
-            saveButton.setImage(UIImage(systemName: "heart.fill"), for: UIControl.State.selected)
+            savedButton.setImage(UIImage(systemName: "heart.fill"), for: UIControl.State.selected)
         } else {
             // Fallback on earlier versions  heart_filled
-            saveButton.setImage(UIImage(systemName: "heart_filled"), for: UIControl.State.selected)
+            savedButton.setImage(UIImage(named: "heart_filled"), for: UIControl.State.selected)
         }
         tableView.dataSource = self
         tableView.delegate = self
@@ -46,9 +47,6 @@ class SavedRecipeDetailsVC : UIViewController {
         selectedSegment.setTitleTextAttributes(selectedtitleTextAttributes, for: .selected)
         populateRecipe(recipe: selectedRecipe)
         setUpFetchedResultsController()
-        
-        // Start observing style change
-        startObserving(&UserInterfaceStyleManager.shared)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -82,7 +80,7 @@ class SavedRecipeDetailsVC : UIViewController {
     
     
     func populateRecipe(recipe:Recipe)  {
-        saveButton.isSelected = true
+        savedButton.isSelected = true
         recipeTitleLabel.text = recipe.name
         self.navigationItem.title = recipe.area! + " - " + recipe.category!
         recipeBannerImageView.image = UIImage(data: recipe.imageThumbData! as Data)
@@ -107,20 +105,38 @@ class SavedRecipeDetailsVC : UIViewController {
         if sourceUrl != ""{
             openExternalUrl(url: sourceUrl!)
         }else {
-            showAlertDialog(title: "Ooops", message: "Recipe web link seems to be invalid")
-        }
+            let message: MessageView = MessageView.viewFromNib(layout: .cardView)
+            message.configureTheme(.error)
+            message.configureContent(body: "Recipe web link seems to be invalid".localized)
+            var config = SwiftMessages.defaultConfig
+            config.presentationContext = .view(view)
+            config.duration = .automatic
+            config.presentationStyle = .top
+            SwiftMessages.show(config: config, view: message)          }
     }
     @IBAction func youtubeButton(_ sender: UIButton) {
         let sourceUrl = recipe?.youtubeLink
         if sourceUrl != ""{
             openExternalUrl(url: sourceUrl!)
         }else {
-            showAlertDialog(title: "Ooops ...", message: "Recipe youtube links is invalid")
-        }
+            let message: MessageView = MessageView.viewFromNib(layout: .cardView)
+            message.configureTheme(.error)
+            message.configureContent(body: "Recipe youtube links is invalid".localized)
+            var config = SwiftMessages.defaultConfig
+            config.presentationContext = .view(view)
+            config.duration = .automatic
+            config.presentationStyle = .top
+            SwiftMessages.show(config: config, view: message)        }
     }
     
-    @IBAction func savedButtonPressed(_ sender: UIButton) {
-        showToast(message:"Recipe is already your Favourtite")
+    @IBAction func SavedButtonPressed(_ sender: UIButton) {
+        let message: MessageView = MessageView.viewFromNib(layout: .cardView)
+        message.configureTheme(.success)
+        message.configureContent(body: "Recipe is already in Saved".localized)
+        var config = SwiftMessages.defaultConfig
+        config.presentationContext = .view(view)
+        config.duration = .automatic
+        config.presentationStyle = .top
     }
     
     @IBAction func segementIndexChanged(_ sender: UISegmentedControl) {
@@ -131,7 +147,7 @@ class SavedRecipeDetailsVC : UIViewController {
 }
 // -------------------------------------------------------------------------
 // MARK: - Table view data source
-extension SavedRecipeDetailsVC:UITableViewDataSource, UITableViewDelegate{
+extension SavedRecipeDetailsVC : UITableViewDataSource, UITableViewDelegate{
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return fetchedResultsController.sections?.count ?? 1
@@ -160,7 +176,7 @@ extension SavedRecipeDetailsVC:UITableViewDataSource, UITableViewDelegate{
 
 // -------------------------------------------------------------------------
 // MARK: -FetchedResults Controller
-extension SavedRecipeDetailsVC:NSFetchedResultsControllerDelegate {
+extension SavedRecipeDetailsVC : NSFetchedResultsControllerDelegate {
     func controller(_ controller: NSFetchedResultsController<NSFetchRequestResult>, didChange anObject: Any, at indexPath: IndexPath?, for type: NSFetchedResultsChangeType, newIndexPath: IndexPath?) {
         switch type {
         case .insert:
@@ -196,6 +212,3 @@ extension SavedRecipeDetailsVC:NSFetchedResultsControllerDelegate {
         }
     }
 }
-
-
-

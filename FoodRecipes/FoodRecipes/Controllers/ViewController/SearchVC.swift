@@ -5,6 +5,7 @@
 //  Created by Njoud Alrshidi on 10/05/1443 AH.
 //
 import UIKit
+import SwiftMessages
 
 class SearchVC: UIViewController {
 
@@ -87,7 +88,7 @@ class SearchVC: UIViewController {
                 self.recipeList = recipeList
                 self.tableView.reloadData()
             }else {
-                self.showAlertDialog(title: "Loading Error", message: error?.localizedDescription ?? "Failed to load data")
+                self.showAlertDialog(title: "Loading Error".localized, message: error?.localizedDescription ?? "Failed to load data".localized)
             }
         })
     }
@@ -102,7 +103,7 @@ class SearchVC: UIViewController {
                     self.catList = catList
                     self.pickerViewController.reloadAllComponents()
                 }else {
-                    self.showAlertDialog(title: "Loading Error", message: error?.localizedDescription ?? "Failed to load data")
+                    self.showAlertDialog(title: "Loading Error".localized, message: error?.localizedDescription ?? "Failed to load data".localized)
                 }
             }
         }else if selectedSegmentIndex == 1 {
@@ -112,7 +113,7 @@ class SearchVC: UIViewController {
                     self.catList = arealist
                     self.pickerViewController.reloadAllComponents()
                 }else {
-                    self.showAlertDialog(title: "Loading Error", message: error?.localizedDescription ?? "Failed to load data")
+                    self.showAlertDialog(title: "Loading Error".localized, message: error?.localizedDescription ?? "Failed to load data".localized)
                 }
             }
         }

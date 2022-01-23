@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftMessages
 
 class RecipeDetailsVC: UIViewController {
     
@@ -40,7 +41,7 @@ class RecipeDetailsVC: UIViewController {
         // Start observing style change
         startObserving(&UserInterfaceStyleManager.shared)
         
-        savedButton.setTitle("Saved", for: UIControl.State.selected)
+        savedButton.setTitle("Saved".localized, for: UIControl.State.selected)
         tabelView.dataSource = self
         tabelView.delegate = self
         if #available(iOS 13.0, *) {
@@ -141,22 +142,42 @@ class RecipeDetailsVC: UIViewController {
         let sourceUrl = restRecipe?.source
         if sourceUrl != ""{ openExternalUrl(url: sourceUrl!)
         }else {
-            showAlertDialog(title: "Ooops", message: "Recipe web link seems to be invalid")
-        }
+            let message: MessageView = MessageView.viewFromNib(layout: .cardView)
+            message.configureTheme(.error)
+            message.configureContent(body: "Recipe web link seems to be invalid".localized)
+            var config = SwiftMessages.defaultConfig
+            config.presentationContext = .view(view)
+            config.duration = .automatic
+            config.presentationStyle = .top
+            SwiftMessages.show(config: config, view: message)        }
     }
     @IBAction func youTubeButtonPressed(_ sender: UIButton) {
         let sourceUrl = restRecipe?.youtubeLink
         if sourceUrl != ""{
             openExternalUrl(url: sourceUrl!)
         }else {
-            showAlertDialog(title: "Ooops ...", message: "Recipe youtube links is invalid")
+            let message: MessageView = MessageView.viewFromNib(layout: .cardView)
+            message.configureTheme(.error)
+            message.configureContent(body: "Recipe youtube links is invalid".localized)
+            var config = SwiftMessages.defaultConfig
+            config.presentationContext = .view(view)
+            config.duration = .automatic
+            config.presentationStyle = .top
+            SwiftMessages.show(config: config, view: message)
         }
     }
     @IBAction func savedButtonPressed(_ sender: UIButton) {
         if !sender.isSelected {
             saveRecipe()
         }else {
-            showToast(message:"Recipe is already saved")
+            let message: MessageView = MessageView.viewFromNib(layout: .cardView)
+            message.configureTheme(.success)
+            message.configureContent(body: "Recipe is already saved".localized)
+            var config = SwiftMessages.defaultConfig
+            config.presentationContext = .view(view)
+            config.duration = .automatic
+            config.presentationStyle = .top
+            SwiftMessages.show(config: config, view: message)
         }
         
     }

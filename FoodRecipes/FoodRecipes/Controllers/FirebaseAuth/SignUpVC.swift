@@ -38,7 +38,7 @@ class SignUpVC: UIViewController {
             
             let message: MessageView = MessageView.viewFromNib(layout: .cardView)
             message.configureTheme(.error)
-            message.configureContent(body: "Please fill Name , Email and Password Fields !")
+            message.configureContent(body: "Please fill Name , Email and Password Fields !".localized)
             var config = SwiftMessages.defaultConfig
             config.duration = .automatic
             config.presentationStyle = .top
@@ -60,7 +60,7 @@ class SignUpVC: UIViewController {
                 
                 let message: MessageView = MessageView.viewFromNib(layout: .cardView)
                 message.configureTheme(.error)
-                message.configureContent(body: "Email address is alreaady use by another account!")
+                message.configureContent(body: "Email address is alreaady use by another account!".localized)
                 var config = SwiftMessages.defaultConfig
                 config.duration = .automatic
                 config.presentationStyle = .top

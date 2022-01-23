@@ -30,7 +30,7 @@ class AboutUsVC: UIViewController {
     func updateTextView(){
         let path = "https://twitter.com/Njoud06880782"
         let text = textView.text ?? ""
-        let attributedString = NSAttributedString.makeHyperlink(for: path, in: text, as: "Twitter")
+        let attributedString = NSAttributedString.makeHyperlink(for: path, in: text, as: "Twitter".localized)
         let font = textView.font
         let textColor = textView.textColor
         textView.attributedText = attributedString

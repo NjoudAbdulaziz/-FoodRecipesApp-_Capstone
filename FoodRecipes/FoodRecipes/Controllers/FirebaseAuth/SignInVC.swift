@@ -27,6 +27,8 @@ class SignInVC: UIViewController {
         
         // Start observing style change
         startObserving(&UserInterfaceStyleManager.shared)
+        //
+      //  checkUserInfo()
 
     }
     // MARK: - Login Button
@@ -36,7 +38,7 @@ class SignInVC: UIViewController {
         if email.text?.isEmpty ?? true || password.text?.isEmpty ?? true {
             let message: MessageView = MessageView.viewFromNib(layout: .cardView)
             message.configureTheme(.error)
-            message.configureContent(body: "Please fill Email and Password !")
+            message.configureContent(body: "Please fill Email and Password !".localized)
             var config = SwiftMessages.defaultConfig
             config.presentationContext = .view(view)
             config.duration = .automatic
@@ -59,7 +61,7 @@ class SignInVC: UIViewController {
                 
                 let message: MessageView = MessageView.viewFromNib(layout: .cardView)
                 message.configureTheme(.info)
-                message.configureContent(body: "Sorry, Couldn't find your Account!")
+                message.configureContent(body: "Sorry, Couldn't find your Account!".localized)
                 var config = SwiftMessages.defaultConfig
                 config.duration = .automatic
                 config.presentationStyle = .top
@@ -72,6 +74,16 @@ class SignInVC: UIViewController {
               }
           }
       }
+    
+    // MARK: - Current User Go To The Main Page
+//    func checkUserInfo() {
+//        if Auth.auth().currentUser != nil {
+//            let mainView = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "main") as! MainVC
+//            mainView.modalPresentationStyle = .fullScreen
+//            self.present(mainView, animated: true, completion: nil)
+//
+//        }
+//    }
     
     // MARK: - To Go To The Main Page
     

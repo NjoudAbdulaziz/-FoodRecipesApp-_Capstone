@@ -24,10 +24,10 @@ class SideMenuVC: UIViewController {
     var defaultHighlightedCell: Int = 0
     
     var menu: [SideMenu] = [
-        SideMenu(icon: UIImage(named: "searchIcon")!, title: "Search Recipes"),
-        SideMenu(icon: UIImage(named: "saveIcon")!, title: "Saved Recipes"),
-        SideMenu(icon: UIImage(named: "settings")!, title: "Settings"),
-        SideMenu(icon: UIImage(named: "aboutUsIcon")!, title: "About Us")
+        SideMenu(icon: UIImage(named: "searchIcon")!, title: "Search Recipes".localized),
+        SideMenu(icon: UIImage(named: "saveIcon")!, title: "Saved Recipes".localized),
+        SideMenu(icon: UIImage(named: "settings")!, title: "Settings".localized),
+        SideMenu(icon: UIImage(named: "aboutUsIcon")!, title: "About Us".localized)
     ]
     
     

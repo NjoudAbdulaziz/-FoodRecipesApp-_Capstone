@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		B704F274278F505600314F8F /* SwiftMessages in Frameworks */ = {isa = PBXBuildFile; productRef = B704F273278F505600314F8F /* SwiftMessages */; };
 		B7275A0F279C29590041DCAB /* UserInterfaceStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7275A0E279C29590041DCAB /* UserInterfaceStyle.swift */; };
+		B7275A14279C54A20041DCAB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B7275A16279C54A20041DCAB /* Localizable.strings */; };
+		B7275A1E279DB92D0041DCAB /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7275A1D279DB92D0041DCAB /* Localization.swift */; };
 		B7375CD027973B92009C616F /* NSAttributedStringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7375CCF27973B92009C616F /* NSAttributedStringExtension.swift */; };
 		B73E8B122765EA8B00AACC31 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73E8B112765EA8B00AACC31 /* SignInVC.swift */; };
 		B73E8B142765EDEB00AACC31 /* SignIn_SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73E8B132765EDEB00AACC31 /* SignIn_SignUpVC.swift */; };
@@ -46,6 +48,10 @@
 
 /* Begin PBXFileReference section */
 		B7275A0E279C29590041DCAB /* UserInterfaceStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInterfaceStyle.swift; sourceTree = "<group>"; };
+		B7275A10279C4F110041DCAB /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		B7275A11279C4F120041DCAB /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Main.strings; sourceTree = "<group>"; };
+		B7275A17279C54A40041DCAB /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B7275A1D279DB92D0041DCAB /* Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
 		B7375CCF27973B92009C616F /* NSAttributedStringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSAttributedStringExtension.swift; sourceTree = "<group>"; };
 		B73E8B112765EA8B00AACC31 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		B73E8B132765EDEB00AACC31 /* SignIn_SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignIn_SignUpVC.swift; sourceTree = "<group>"; };
@@ -117,6 +123,7 @@
 			children = (
 				B7C81686278E060C00E87DD4 /* UIViewController + UIAlertController.swift */,
 				B7375CCF27973B92009C616F /* NSAttributedStringExtension.swift */,
+				B7275A1D279DB92D0041DCAB /* Localization.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -150,6 +157,7 @@
 				B78C16DD2761D500009F4973 /* AppDelegate.swift */,
 				B78C16E62761D503009F4973 /* Assets.xcassets */,
 				B78C16EB2761D503009F4973 /* Info.plist */,
+				B7275A16279C54A20041DCAB /* Localizable.strings */,
 			);
 			path = FoodRecipes;
 			sourceTree = "<group>";
@@ -310,6 +318,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ar,
 			);
 			mainGroup = B78C16D12761D500009F4973;
 			packageReferences = (
@@ -331,6 +340,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B78C16EA2761D503009F4973 /* LaunchScreen.storyboard in Resources */,
+				B7275A14279C54A20041DCAB /* Localizable.strings in Resources */,
 				B7CC03D2277B279E00963F9C /* SideMenuTableViewCell.xib in Resources */,
 				B76E6D93276605680076D074 /* GoogleService-Info.plist in Resources */,
 				B78C16E72761D503009F4973 /* Assets.xcassets in Resources */,
@@ -368,6 +378,7 @@
 				B78C170D2762383B009F4973 /* SignUpVC.swift in Sources */,
 				B76E6DB52768AAC80076D074 /* SavedVC.swift in Sources */,
 				B770BB27278190C10000C630 /* RecipeDetailsVC.swift in Sources */,
+				B7275A1E279DB92D0041DCAB /* Localization.swift in Sources */,
 				B7CC03CE277B26D600963F9C /* AboutUsVC.swift in Sources */,
 				B7CC03CC277B04C900963F9C /* SideMenu.swift in Sources */,
 				B78C16E02761D500009F4973 /* SceneDelegate.swift in Sources */,
@@ -377,10 +388,19 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		B7275A16279C54A20041DCAB /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B7275A17279C54A40041DCAB /* ar */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		B78C16E32761D500009F4973 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				B78C16E42761D500009F4973 /* Base */,
+				B7275A11279C4F120041DCAB /* ar */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -389,6 +409,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				B78C16E92761D503009F4973 /* Base */,
+				B7275A10279C4F110041DCAB /* ar */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -400,6 +421,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -461,6 +483,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
