@@ -1,53 +1,33 @@
-<<<<<<< HEAD
-FoodRecipesApp-Capstone
+#FoodRecipesApp-Capstone
+--------------
 
-Project Name :
+#Project Name :
+--------------
+ FoodRecipes app
 
-FoodRecipes
+#Project Description :
+--------------
+ FoodRecipes app, where people can browse, search and saved recipes.
 
-Project Description :
+# Main Features:
+--------------
+- User Authentication.
+- Search for recipes.
+- Filter your search by recipes caterogies or area/location.
+- Saved your favorite recipes and find it in svaed recipes list.
+- Manage your Saved recipes.
+- Read more about the recipes from the recipe Weblink and youtube.
+- Localization / Arabic and English.
+- Dark Mode.
 
-Cooking recipes sharing app, where people can browse, search, create and share recipes.
-
-project Features List :
-
-browse, search recipes.
-create and share the recipes.
-Define the scenes :
-
-User Stories :
-
-New user , to start using app must sign-Up to create and share the recipes.
-User can login to the app , to create and share the recipes.
-User can logOut from the app.
-User can create and share the recipes.
-User can browse, search recipes.
-User can add the recipes he prefers to the saved section.
-=======
-# FoodRecipesApp-Capstone
-
-# Project Name : 
- FoodRecipes  
-
-# Project Description :
-Cooking recipes sharing app, where people can browse, search, create and share recipes.
-
-
-# project Features List :
-
-- browse, search recipes.
-- create and share the recipes.
-
-
-# Define the scenes :
-- 
 
 # User Stories :
+--------------
+This app will allow the users to add the recipes in the svaed recipes list and manage it , browse and search the recipes from the recipe Weblink and youtube. In this application there is a user Authentication feature which is the sign in , sign up and sign out feature to enhance the user experience through firebase database" "Cloud Firestore".
 
-- New user , to start using app must sign-Up to create and share the recipes.
-- User can login to the app , to create and share the recipes.
-- User can logOut from the app.
-- User can create and share the recipes.
-- User can browse, search recipes.
-- User can add the recipes he prefers to the saved section.
->>>>>>> ab411f2ccb06a788c27b001c134e0f5e0223ed10
+
+# Project Prototype Design :
+--------------
+/Users/njoudalrshidi/Desktop/diagrmaFOODRECIPES.png
+/Users/njoudalrshidi/Desktop/DIAGRAMfoodrecipes.png
+
