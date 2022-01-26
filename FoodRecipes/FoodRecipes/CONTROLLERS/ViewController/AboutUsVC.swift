@@ -8,14 +8,20 @@
 import UIKit
 
 class AboutUsVC: UIViewController {
-
+    
+    //MARK:-Outlets
     @IBOutlet weak var sideMenuBtn: UIBarButtonItem!
     @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet var textView: UITextView! {
+     didSet {
+         textView.text = NSLocalizedString("Connect with us via Twitter".localized, comment: "")
+    }
+}
+
     
-    @IBOutlet weak var textView: UITextView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        // Side Menu Btn
         sideMenuBtn.target = revealViewController()
         sideMenuBtn.action = #selector(revealViewController()?.revealSideMenu)
         
@@ -27,7 +33,8 @@ class AboutUsVC: UIViewController {
         // Start observing style change
         startObserving(&UserInterfaceStyleManager.shared)
     }
-    func updateTextView(){
+    
+    func updateTextView() {
         let path = "https://twitter.com/Njoud06880782"
         let text = textView.text ?? ""
         let attributedString = NSAttributedString.makeHyperlink(for: path, in: text, as: "Twitter".localized)
@@ -37,4 +44,5 @@ class AboutUsVC: UIViewController {
         textView.font = font
         textView.textColor = textColor
     }
+
 }

@@ -12,7 +12,7 @@ import SwiftMessages
 
 class SignUpVC: UIViewController {
     
-    //UIView Properties...
+    //MARK:-Outlets
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var userNameTF: UITextField!
     @IBOutlet weak var newEmailTF: UITextField!
@@ -74,13 +74,10 @@ class SignUpVC: UIViewController {
                                 print("Done Saving in Database")
                 
                                 self.goToMainPage()
-                            }
+                }
             })
-            
-            
-                    }
-            
-        }
+          }
+       }
     }
     
     // MARK: - To Go To Main Page

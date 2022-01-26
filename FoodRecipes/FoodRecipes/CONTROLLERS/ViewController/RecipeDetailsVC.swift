@@ -23,7 +23,6 @@ class RecipeDetailsVC: UIViewController {
     
     
     //MARK:-Properties
-    
     var shortRecipe:ShortRecipe?
     var ingredients:[RecipeIngredients] = []
     var imageData: Data?
@@ -35,15 +34,18 @@ class RecipeDetailsVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        tabelView.dataSource = self
+        tabelView.delegate = self
+
+        //Segmented
         selectedSegmented.setTitleTextAttributes(titleTextAttributes, for: .normal)
         selectedSegmented.setTitleTextAttributes(selectedtitleTextAttributes, for: .selected)
         
         // Start observing style change
         startObserving(&UserInterfaceStyleManager.shared)
-        
+        // Saved Button change
         savedButton.setTitle("Saved".localized, for: UIControl.State.selected)
-        tabelView.dataSource = self
-        tabelView.delegate = self
         if #available(iOS 13.0, *) {
             savedButton.setImage(UIImage(systemName: "heart.fill"), for: UIControl.State.selected)
         } else {
@@ -98,7 +100,7 @@ class RecipeDetailsVC: UIViewController {
         }
     }
     
-    /// save recipe to the Core data
+    // save recipe to the Core data
     func saveRecipe() {
             let recipe = Recipe(context: DataController.shared.viewContext)
             recipe.name = restRecipe?.name
@@ -121,16 +123,14 @@ class RecipeDetailsVC: UIViewController {
                 try? DataController.shared.viewContext.save()
             }
         savedButton.isSelected = true
-        
     }
     
     
     func checkIfSaved()   {
         guard let recipeid = restRecipe?.id else { return }
-        //to avoid multiple data we chacke if the recipe is already saved
-        guard let isRecipeSaved = recipeExists(recipeId: recipeid) else {
-            return
-        }
+        //to avoid multiple data chacke if the recipe is already saved
+        guard let isRecipeSaved = recipeExists(recipeId: recipeid) else {return}
+        
         if isRecipeSaved {
             savedButton.isSelected = true
         }

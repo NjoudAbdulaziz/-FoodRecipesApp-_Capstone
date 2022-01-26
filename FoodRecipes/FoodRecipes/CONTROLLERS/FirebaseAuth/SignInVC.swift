@@ -12,7 +12,7 @@ import SwiftMessages
 
 class SignInVC: UIViewController {
   
-    //UIView Properties.....
+    //MARK:-Outlets
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var email: UITextField!
     @IBOutlet weak var password: UITextField!
@@ -28,7 +28,6 @@ class SignInVC: UIViewController {
         // Start observing style change
         startObserving(&UserInterfaceStyleManager.shared)
         //
-      //  checkUserInfo()
 
     }
     // MARK: - Login Button
@@ -75,16 +74,7 @@ class SignInVC: UIViewController {
           }
       }
     
-    // MARK: - Current User Go To The Main Page
-//    func checkUserInfo() {
-//        if Auth.auth().currentUser != nil {
-//            let mainView = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "main") as! MainVC
-//            mainView.modalPresentationStyle = .fullScreen
-//            self.present(mainView, animated: true, completion: nil)
-//
-//        }
-//    }
-    
+
     // MARK: - To Go To The Main Page
     
     private func goToMainPage() {

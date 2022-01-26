@@ -6,16 +6,17 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
 
 class SignIn_SignUpVC: UIViewController {
 
-    //UIView Properties...
+    //MARK:-Outlets
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var signInBtn: UIButton!
     @IBOutlet weak var dontHaveAccountLabel: UILabel!
     @IBOutlet weak var signUpBtn: UIButton!
     
-    // First loading Func....
     override func viewDidLoad() {
         super.viewDidLoad()
         SetupProperties()
@@ -24,8 +25,20 @@ class SignIn_SignUpVC: UIViewController {
         
         // Start observing style change
         startObserving(&UserInterfaceStyleManager.shared)
+        
+        checkUserInfo()
     }
-    
+    // MARK: - Current User Go To The Main Page
+    func checkUserInfo() {
+        if Auth.auth().currentUser != nil {
+            let mainView = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "main") as! MainVC
+            mainView.modalPresentationStyle = .fullScreen
+            self.present(mainView, animated: true, completion: nil)
+
+        }
+    }
+    // MARK: - Actions
+
     @IBAction func signInBtnClick(_ sender: Any) {
         performSegue(withIdentifier: "SignIn", sender: nil)
 
@@ -38,7 +51,7 @@ class SignIn_SignUpVC: UIViewController {
     
     //Setup UI elements...
     func SetupProperties() {
-        
+
         //SignIn Button...
         signInBtn.layer.cornerRadius = signInBtn.layer.frame.height/2
         

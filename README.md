@@ -1,13 +1,12 @@
-<<<<<<< HEAD
 FoodRecipesApp-Capstone
 
 Project Name :
 
-FoodRecipes
+FoodRecipes app
 
 Project Description :
 
-Cooking recipes sharing app, where people can browse, search, create and share recipes.
+Cooking recipes sharing app, where people can browse, search recipes.
 
 project Features List :
 
@@ -50,4 +49,3 @@ Cooking recipes sharing app, where people can browse, search, create and share r
 - User can create and share the recipes.
 - User can browse, search recipes.
 - User can add the recipes he prefers to the saved section.
->>>>>>> ab411f2ccb06a788c27b001c134e0f5e0223ed10

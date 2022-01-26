@@ -9,13 +9,17 @@ import UIKit
 import CoreData
 
 class SavedVC: UIViewController {
-
+    
+    //MARK:-Outlets
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var sideMenuBtn: UIBarButtonItem!
     
+    var fetchedResultsController:NSFetchedResultsController<Recipe>!
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        //side Menu Btn
         sideMenuBtn.target = revealViewController()
         sideMenuBtn.action = #selector(revealViewController()?.revealSideMenu)
         
@@ -29,13 +33,6 @@ class SavedVC: UIViewController {
     }
     
 
-    
-
-
-
-var fetchedResultsController:NSFetchedResultsController<Recipe>!
-
-
 override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
     setUpFetchedResultsController()
@@ -43,6 +40,7 @@ override func viewWillAppear(_ animated: Bool) {
         tableView.deselectRow(at: indexPath, animated: false)
         tableView.reloadRows(at: [indexPath], with: .fade)
     }
+    
     tableView.reloadData()
 }
 
@@ -67,7 +65,7 @@ fileprivate func setUpFetchedResultsController() {
 }
 
 
-// Deletes the `Recipe` at the specified index path
+// Deletes the Recipe at the specified index path
 func deleteDeleteRecipe(at indexPath: IndexPath) {
     let recipeToDelete = fetchedResultsController.object(at: indexPath)
     DataController.shared.viewContext.delete(recipeToDelete)
@@ -87,17 +85,16 @@ override func setEditing(_ editing: Bool, animated: Bool) {
 
 
 //-----------------------------------------------------------------
-// MARK: - Navigation
+//MARK:- Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
 override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     // Get the new view controller using segue.destination.
     // Pass the selected object to the new view controller.
     if segue.identifier == "savedRecipeSegue" {
         let detailVC = segue.destination as! SavedRecipeDetailsVC
         detailVC.recipe = sender as? Recipe
-    }
-}
+      }
+   }
 
 }
 
@@ -121,7 +118,8 @@ func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> 
     
     return count
 }
-/////-------------------------اتلكددد
+
+    
 func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let aRecipe = fetchedResultsController.object(at: indexPath)
     let cell = tableView.dequeueReusableCell(withIdentifier: "savedRecipeCell", for: indexPath)
@@ -188,8 +186,9 @@ func controller(_ controller: NSFetchedResultsController<NSFetchRequestResult>, 
     case .update, .move:
         fatalError("Invalid change type in controller(_:didChange:atSectionIndex:for:). Only .insert or .delete should be possible.")
     default: () // Unsupported
+        
     }
-}
+  }
 }
 
 

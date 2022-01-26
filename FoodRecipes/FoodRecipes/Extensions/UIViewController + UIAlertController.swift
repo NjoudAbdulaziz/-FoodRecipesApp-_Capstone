@@ -19,7 +19,7 @@ extension UIViewController  {
     
     func showAlertDialog(title: String, message: String) {
         let alertVC = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        alertVC.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+        alertVC.addAction(UIAlertAction(title: "Ok".localized, style: .default, handler: nil))
         present(alertVC, animated: true, completion: nil)
     }
     
@@ -57,7 +57,8 @@ extension UIViewController  {
     }
 }
 
-// Saved Recipes TableView
+// Saved Recipes TableView (if TableView is Empty)...
+
 extension UITableView {
     func setEmptyView(title: String, message: String, messageImage: UIImage) {
            

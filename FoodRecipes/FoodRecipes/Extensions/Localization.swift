@@ -7,11 +7,10 @@
 
 import Foundation
 
+// extension String for localization..
 
 extension String {
-    
   var localized : String {
-        
   return NSLocalizedString(self, comment: "")
         
     }

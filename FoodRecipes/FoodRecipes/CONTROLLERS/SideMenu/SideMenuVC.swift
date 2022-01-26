@@ -12,19 +12,19 @@ import UIKit
 protocol SideMenuVCDelegate {
     
     func selectedCell(_ row: Int)
-}
+  }
 
 class SideMenuVC: UIViewController {
-
+    //MARK:-Outlets
     @IBOutlet weak var sideMenuTableView: UITableView!
-    
     @IBOutlet weak var sideMenuImageBackground: UIImageView!
+    
     //declare the delegate
     var delegate: SideMenuVCDelegate?
     var defaultHighlightedCell: Int = 0
     
     var menu: [SideMenu] = [
-        SideMenu(icon: UIImage(named: "searchIcon")!, title: "Search Recipes".localized),
+        SideMenu(icon: UIImage(named: "searchIcon")!, title:NSLocalizedString("Search Recipes".localized, comment: "")),
         SideMenu(icon: UIImage(named: "saveIcon")!, title: "Saved Recipes".localized),
         SideMenu(icon: UIImage(named: "settings")!, title: "Settings".localized),
         SideMenu(icon: UIImage(named: "aboutUsIcon")!, title: "About Us".localized)

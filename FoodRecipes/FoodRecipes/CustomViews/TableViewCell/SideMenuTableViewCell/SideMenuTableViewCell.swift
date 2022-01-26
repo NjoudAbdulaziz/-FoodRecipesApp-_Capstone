@@ -12,6 +12,7 @@ class SideMenuTableViewCell: UITableViewCell {
     class var identifire: String {return String(describing: self) }
     class var nib: UINib {return UINib(nibName: identifire, bundle: nil)}
     
+    //MARK:-Outlets
     @IBOutlet weak var iconImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     

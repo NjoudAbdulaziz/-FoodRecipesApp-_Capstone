@@ -14,7 +14,6 @@ class MainVC: UIViewController {
     private var sideMenuRevealWidth: CGFloat = 260
  
     //The paddingForRotation variable is used to “push” the side menu more to the left when it’s closed because, during the rotation, it shows up a little bit.
-    
     private let paddingForRotation: CGFloat = 150
     private var isExpanded: Bool = false
     private var draggingIsEnabled: Bool = false
@@ -37,7 +36,7 @@ class MainVC: UIViewController {
         self.sideMenuShadowView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         self.sideMenuShadowView.backgroundColor = .black
         self.sideMenuShadowView.alpha = 0.0
-        
+        //Tap Gesture Recognizer
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(TabGestureRecognizer))
         tapGestureRecognizer.numberOfTapsRequired = 1
         tapGestureRecognizer.delegate = self

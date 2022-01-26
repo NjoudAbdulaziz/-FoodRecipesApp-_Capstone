@@ -17,17 +17,17 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wWe-gL-zsv">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="50.5"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BuZ-lf-vIh">
                                 <rect key="frame" x="16" y="7" width="30" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="30" id="gUN-6h-JAA"/>
-                                    <constraint firstAttribute="height" constant="30" id="ud3-BM-cun"/>
+                                    <constraint firstAttribute="height" constant="30" id="LbA-ph-gcc"/>
+                                    <constraint firstAttribute="width" constant="30" id="ara-ii-h7w"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bhC-oh-ew0">
-                                <rect key="frame" x="59" y="13" width="246" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bhC-oh-ew0">
+                                <rect key="frame" x="59" y="12" width="246" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -35,12 +35,12 @@
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="bhC-oh-ew0" firstAttribute="top" secondItem="wWe-gL-zsv" secondAttribute="top" constant="13" id="Bfr-Ld-l1X"/>
-                            <constraint firstAttribute="bottom" secondItem="bhC-oh-ew0" secondAttribute="bottom" constant="17" id="Eky-2J-QBe"/>
-                            <constraint firstItem="bhC-oh-ew0" firstAttribute="leading" secondItem="BuZ-lf-vIh" secondAttribute="trailing" constant="13" id="IlP-6A-Fho"/>
-                            <constraint firstAttribute="bottom" secondItem="BuZ-lf-vIh" secondAttribute="bottom" constant="10.5" id="Mpu-aH-Gav"/>
-                            <constraint firstItem="BuZ-lf-vIh" firstAttribute="leading" secondItem="wWe-gL-zsv" secondAttribute="leading" constant="16" id="pFC-un-4FG"/>
-                            <constraint firstItem="BuZ-lf-vIh" firstAttribute="top" secondItem="wWe-gL-zsv" secondAttribute="top" constant="7" id="v6T-KB-GPc"/>
+                            <constraint firstItem="bhC-oh-ew0" firstAttribute="centerY" secondItem="BuZ-lf-vIh" secondAttribute="centerY" id="9HZ-pU-zZu"/>
+                            <constraint firstItem="bhC-oh-ew0" firstAttribute="leading" secondItem="BuZ-lf-vIh" secondAttribute="trailing" constant="13" id="jaK-ca-GNg"/>
+                            <constraint firstAttribute="trailing" secondItem="bhC-oh-ew0" secondAttribute="trailing" constant="15" id="lUJ-x4-lFE"/>
+                            <constraint firstItem="BuZ-lf-vIh" firstAttribute="leading" secondItem="wWe-gL-zsv" secondAttribute="leading" constant="16" id="nbw-Zy-QDB"/>
+                            <constraint firstAttribute="bottom" secondItem="BuZ-lf-vIh" secondAttribute="bottom" constant="7" id="oJD-SP-vRu"/>
+                            <constraint firstItem="BuZ-lf-vIh" firstAttribute="top" secondItem="wWe-gL-zsv" secondAttribute="top" constant="7" id="ryb-g8-865"/>
                         </constraints>
                     </view>
                 </subviews>

@@ -101,13 +101,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B76E6D94276609880076D074 /* Views */ = {
+		B76E6D94276609880076D074 /* VIEWS */ = {
 			isa = PBXGroup;
 			children = (
 				B78C16E82761D503009F4973 /* LaunchScreen.storyboard */,
 				B78C16E32761D500009F4973 /* Main.storyboard */,
 			);
-			path = Views;
+			path = VIEWS;
 			sourceTree = "<group>";
 		};
 		B76E6D9727661C890076D074 /* CustomViews */ = {
@@ -151,8 +151,8 @@
 				B76E6DB8276A10E00076D074 /* Extensions */,
 				B76E6D9727661C890076D074 /* CustomViews */,
 				B78C16FE2762129F009F4973 /* MODELS */,
-				B76E6D94276609880076D074 /* Views */,
-				B78C1707276234E2009F4973 /* Controllers */,
+				B76E6D94276609880076D074 /* VIEWS */,
+				B78C1707276234E2009F4973 /* CONTROLLERS */,
 				B78C16DF2761D500009F4973 /* SceneDelegate.swift */,
 				B78C16DD2761D500009F4973 /* AppDelegate.swift */,
 				B78C16E62761D503009F4973 /* Assets.xcassets */,
@@ -174,14 +174,14 @@
 			path = MODELS;
 			sourceTree = "<group>";
 		};
-		B78C1707276234E2009F4973 /* Controllers */ = {
+		B78C1707276234E2009F4973 /* CONTROLLERS */ = {
 			isa = PBXGroup;
 			children = (
 				B7916DEB2794AD020024D2DA /* ViewController */,
 				B7916DEA2794AB150024D2DA /* FirebaseAuth */,
 				B7916DE92794AAB90024D2DA /* SideMenu */,
 			);
-			path = Controllers;
+			path = CONTROLLERS;
 			sourceTree = "<group>";
 		};
 		B7916DE82794A9A90024D2DA /* Firebase */ = {

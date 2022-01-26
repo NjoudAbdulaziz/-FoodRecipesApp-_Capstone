@@ -15,7 +15,7 @@ class SavedRecipeDetailsVC : UIViewController {
     @IBOutlet weak var recipeBannerImageView: UIImageView!
     @IBOutlet weak var recipeTitleLabel: UILabel!
     @IBOutlet weak var youtubeButton: UIButton!
-    @IBOutlet weak var savedButton: UIButton!
+    @IBOutlet weak var savedBtn: UIButton!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var webButton: UIButton!
     @IBOutlet weak var selectedSegment: UISegmentedControl!
@@ -30,16 +30,17 @@ class SavedRecipeDetailsVC : UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        guard let selectedRecipe = recipe else {
-          return
-        }
-        savedButton.setTitle("Saved".localized, for: UIControl.State.selected)
+        
+        guard let selectedRecipe = recipe else {return}
+        // Saved Button change
+        savedBtn.setTitle("Saved".localized, for: UIControl.State.selected)
         if #available(iOS 13.0, *) {
-            savedButton.setImage(UIImage(systemName: "heart.fill"), for: UIControl.State.selected)
+            savedBtn.setImage(UIImage(systemName: "heart.fill"), for: UIControl.State.selected)
         } else {
             // Fallback on earlier versions  heart_filled
-            savedButton.setImage(UIImage(named: "heart_filled"), for: UIControl.State.selected)
+            savedBtn.setImage(UIImage(named: "heart_filled"), for: UIControl.State.selected)
         }
+        
         tableView.dataSource = self
         tableView.delegate = self
        
@@ -80,7 +81,7 @@ class SavedRecipeDetailsVC : UIViewController {
     
     
     func populateRecipe(recipe:Recipe)  {
-        savedButton.isSelected = true
+        savedBtn.isSelected = true
         recipeTitleLabel.text = recipe.name
         self.navigationItem.title = recipe.area! + " - " + recipe.category!
         recipeBannerImageView.image = UIImage(data: recipe.imageThumbData! as Data)
@@ -137,6 +138,7 @@ class SavedRecipeDetailsVC : UIViewController {
         config.presentationContext = .view(view)
         config.duration = .automatic
         config.presentationStyle = .top
+        SwiftMessages.show(config: config, view: message)
     }
     
     @IBAction func segementIndexChanged(_ sender: UISegmentedControl) {
@@ -212,3 +214,4 @@ extension SavedRecipeDetailsVC : NSFetchedResultsControllerDelegate {
         }
     }
 }
+

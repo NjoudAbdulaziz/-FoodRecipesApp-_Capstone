@@ -8,14 +8,15 @@ import UIKit
 import SwiftMessages
 
 class SearchVC: UIViewController {
-
+    
+    //MARK:-Outlets
     @IBOutlet weak var sideMenuBtn: UIBarButtonItem!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var selectedSegment: UISegmentedControl!
     @IBOutlet weak var pickerViewController: UIPickerView!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
-    // MARK: Properties
+    //MARK:- Properties
     var recipeList:[ShortRecipe] = []
     var catList:[String] = []
     let titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.black]
@@ -24,7 +25,7 @@ class SearchVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        // Show side Btn
       sideMenuBtn.target = revealViewController()
       sideMenuBtn.action = #selector(revealViewController()?.revealSideMenu)
         
@@ -54,9 +55,8 @@ class SearchVC: UIViewController {
 
 
 //-----------------------------------------------------------------
-// MARK: - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
+    //MARK:- Navigation
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
@@ -177,7 +177,7 @@ extension SearchVC: UITableViewDataSource, UITableViewDelegate{
     
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("I am here")
+        print("I am njoud")
         let shortRecipe = self.recipeList[(indexPath as NSIndexPath).row]
         performSegue(withIdentifier: "recipeSegue", sender: shortRecipe)
         tableView.deselectRow(at: indexPath, animated: true)
