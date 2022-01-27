@@ -1,6 +1,6 @@
-FoodRecipesApp-Capstone
+#FoodRecipesApp-Capstone
 
-Project Name :
+#Project Name :
 
 FoodRecipes app
 
