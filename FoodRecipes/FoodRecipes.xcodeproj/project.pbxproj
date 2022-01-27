@@ -104,8 +104,8 @@
 		B76E6D94276609880076D074 /* VIEWS */ = {
 			isa = PBXGroup;
 			children = (
-				B78C16E82761D503009F4973 /* LaunchScreen.storyboard */,
-				B78C16E32761D500009F4973 /* Main.storyboard */,
+				B7BC69B327A1A8BC000D7E3D /* Storyboard */,
+				B78C16E62761D503009F4973 /* Assets.xcassets */,
 			);
 			path = VIEWS;
 			sourceTree = "<group>";
@@ -131,7 +131,6 @@
 		B78C16D12761D500009F4973 = {
 			isa = PBXGroup;
 			children = (
-				B76E6D92276605680076D074 /* GoogleService-Info.plist */,
 				B78C16DC2761D500009F4973 /* FoodRecipes */,
 				B78C16DB2761D500009F4973 /* Products */,
 			);
@@ -153,10 +152,8 @@
 				B78C16FE2762129F009F4973 /* MODELS */,
 				B76E6D94276609880076D074 /* VIEWS */,
 				B78C1707276234E2009F4973 /* CONTROLLERS */,
-				B78C16DF2761D500009F4973 /* SceneDelegate.swift */,
-				B78C16DD2761D500009F4973 /* AppDelegate.swift */,
-				B78C16E62761D503009F4973 /* Assets.xcassets */,
 				B78C16EB2761D503009F4973 /* Info.plist */,
+				B76E6D92276605680076D074 /* GoogleService-Info.plist */,
 				B7275A16279C54A20041DCAB /* Localizable.strings */,
 			);
 			path = FoodRecipes;
@@ -180,6 +177,8 @@
 				B7916DEB2794AD020024D2DA /* ViewController */,
 				B7916DEA2794AB150024D2DA /* FirebaseAuth */,
 				B7916DE92794AAB90024D2DA /* SideMenu */,
+				B78C16DD2761D500009F4973 /* AppDelegate.swift */,
+				B78C16DF2761D500009F4973 /* SceneDelegate.swift */,
 			);
 			path = CONTROLLERS;
 			sourceTree = "<group>";
@@ -223,6 +222,15 @@
 				B7EC69082783173E00F72646 /* SettingVC.swift */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		B7BC69B327A1A8BC000D7E3D /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				B78C16E32761D500009F4973 /* Main.storyboard */,
+				B78C16E82761D503009F4973 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
 			sourceTree = "<group>";
 		};
 		B7C81673278DEFB900E87DD4 /* CoreData */ = {
